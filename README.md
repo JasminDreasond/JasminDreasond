@@ -13,7 +13,7 @@
 <p align="center">
     <img src="https://github-readme-stats.vercel.app/api?username=JasminDreasond&count_private=true&show_icons=true&include_all_commits=true&line_height=25&icon_color=30a14f" />
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=JasminDreasond" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JasminDreasond&hide=java,c&layout=compact&langs_count=8&card_width=445" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JasminDreasond&layout=compact&langs_count=8&card_width=445" />
 </p>
 
 <h2></h2>
