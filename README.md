@@ -1,3 +1,13 @@
+<div align="center">
+    <p>
+    <a rel="me" href="https://equestria.social/@JasminDreasond"><img src="https://img.shields.io/badge/Equestria-Social-2b90d9.svg" alt="Equestria Social" /></a>
+    <a href="https://discord.gg/TgHdvJd"><img src="https://img.shields.io/discord/413193536188579841?color=7289da&logo=discord&logoColor=white" alt="Discord server" /></a>
+    <a href="https://www.patreon.com/JasminDreasond"><img src="https://img.shields.io/badge/donate-patreon-F96854.svg?logo=patreon" alt="Patreon" /></a>
+    <a href="https://ko-fi.com/jasmindreasond"><img src="https://img.shields.io/badge/donate-ko%20fi-29ABE0.svg?logo=ko-fi" alt="Ko-Fi" /></a>
+</p>
+    <img src="https://github.com/JasminDreasond/JasminDreasond/blob/main/img/banner.jpg?raw=true" alt="banner" />
+</div>
+
 ## GitHub Stats
 
 <p align="center">
@@ -13,15 +23,3 @@
 [![Twitter](https://img.shields.io/badge/-Twitter-1da1f2?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/JasminDreasond/)
 [![Telegram](https://img.shields.io/badge/-Telegram-32afed?style=for-the-badge&logo=Telegram&logoColor=white)](https://t.me/YasminSeidel/)
 <a href="https://ko-fi.com/JasminDreasond"><img align="right" src="https://img.shields.io/badge/-Buy%20me%20a%20coffee-F16061?style=for-the-badge&logo=Ko-fi&logoColor=white" /></a>
-
-<br/>
-<br/>
-<div align="center">
-    <p>
-    <a rel="me" href="https://equestria.social/@JasminDreasond"><img src="https://img.shields.io/badge/Equestria-Social-2b90d9.svg" alt="Equestria Social" /></a>
-    <a href="https://discord.gg/TgHdvJd"><img src="https://img.shields.io/discord/413193536188579841?color=7289da&logo=discord&logoColor=white" alt="Discord server" /></a>
-    <a href="https://www.patreon.com/JasminDreasond"><img src="https://img.shields.io/badge/donate-patreon-F96854.svg?logo=patreon" alt="Patreon" /></a>
-    <a href="https://ko-fi.com/jasmindreasond">
-    </p>
-    <img src="https://github.com/JasminDreasond/JasminDreasond/blob/main/img/banner.jpg?raw=true" alt="banner" />
-</div>
