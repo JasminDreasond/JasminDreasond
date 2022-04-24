@@ -7,3 +7,18 @@
 </p>
     <img src="https://github.com/JasminDreasond/JasminDreasond/blob/main/img/banner.jpg?raw=true" alt="banner" />
 </div>
+
+## GitHub Stats
+
+<p align="center">
+    <img src="https://github-readme-stats.vercel.app/api?username=JasminDreasond&count_private=true&show_icons=true&include_all_commits=true&line_height=25&icon_color=30a14f" />
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=JasminDreasond" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JasminDreasond&hide=java,c&layout=compact&langs_count=8&card_width=445" />
+</p>
+
+<h2></h2>
+
+[![Github](https://img.shields.io/badge/-Github-000?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/JasminDreasond)
+[![Twitter](https://img.shields.io/badge/-Twitter-1da1f2?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/JasminDreasond/)
+[![Telegram](https://img.shields.io/badge/-Telegram-32afed?style=for-the-badge&logo=Telegram&logoColor=white)](https://t.me/YasminSeidel/)
+<a href="https://ko-fi.com/JasminDreasond"><img align="right" src="https://img.shields.io/badge/-Buy%20me%20a%20coffee-F16061?style=for-the-badge&logo=Ko-fi&logoColor=white" /></a>
