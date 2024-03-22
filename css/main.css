@@ -1,0 +1,23 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.container-sky {
+  background: #93d4f7;
+  display: flex;
+  height: 100%;
+  margin: auto;
+  padding: 1em 0;
+  width: 100%;
+  position: fixed;
+}
+
+#svg {
+  /* border: 1px solid #fff; */
+  display: block;
+  margin: auto;
+  /* max-width: 1000px; */
+  width: 100%;
+}
