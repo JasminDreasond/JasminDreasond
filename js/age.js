@@ -12,4 +12,11 @@ const year = age_dt.getUTCFullYear();
 const age = Math.abs(year - 1970);
 
 // display the calculated age  
-document.getElementById('age').innerText = age;  
+document.getElementById('age').innerText = age;
+
+const timezoneUpdate = () => {
+    document.getElementById('timezone').innerText = moment.tz('America/Sao_Paulo').format(`MM/DD/YYYY HH:mm:ss`);
+};
+
+setInterval(timezoneUpdate, 1000);
+timezoneUpdate();
