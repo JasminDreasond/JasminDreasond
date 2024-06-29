@@ -21,6 +21,7 @@
 
 [![Github](https://img.shields.io/badge/-Github-000?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/JasminDreasond)
 [![Wallet](https://img.shields.io/badge/-Wallet-ecf0f1?style=for-the-badge&logo=Ethereum&logoColor=black)](https://ud.me/jasmindreasond.x)
-[![Twitter](https://img.shields.io/badge/-Twitter-1da1f2?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/JasminDreasond/)
+[![Twitter](https://img.shields.io/badge/-Twitter-657786?style=for-the-badge&logo=X&logoColor=white)](https://twitter.com/JasminDreasond/)
 [![Telegram](https://img.shields.io/badge/-Telegram-32afed?style=for-the-badge&logo=Telegram&logoColor=white)](https://t.me/YasminSeidel/)
+[![Discord Server](https://img.shields.io/badge/-Discord-7289da?style=for-the-badge&logo=Discord&logoColor=white)](https://discord.gg/TgHdvJd)
 <a href="https://ko-fi.com/JasminDreasond"><img align="right" src="https://img.shields.io/badge/-Buy%20me%20a%20coffee-F16061?style=for-the-badge&logo=Ko-fi&logoColor=white" /></a>
