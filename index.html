@@ -37,8 +37,9 @@
         snowStorm.followMouse = true;
 
         const enableDarkMode = (value = true) => {
-            document.body.setAttribute('data-bs-theme', value ? 'dark' : 'white');
-            document.querySelector('.container-sky .sky-color').setAttribute('fill', value ? '#010012' : '#93D4F7')
+            if (document.body) document.body.setAttribute('data-bs-theme', value ? 'dark' : 'white');
+            const skyColor = document.querySelector('.container-sky .sky-color');
+            if (skyColor) skyColor.setAttribute('fill', value ? '#010012' : '#93D4F7')
 
             const changeStyle = (classNameBase) => {
                 const classRemove = classNameBase.replace('{value}', value ? 'light' : 'dark');
@@ -82,9 +83,15 @@
     <link rel="icon" href="./img/favicons/favicon.ico">
     <meta name="theme-color" content="#a21632">
 
+    <script type="text/javascript">
+        const hour = moment().hour();
+        // if (hour >= 19 || hour <= 4)
+        //     enableDarkMode();
+    </script>
+
 </head>
 
-<body data-bs-theme="white">
+<body data-bs-theme="white" class="loading-page">
 
     <div id="snow-storm-container"></div>
     <div class="container-sky">
@@ -690,6 +697,11 @@
             if (month >= 10)
                 snowStorm.resume();
             else snowStorm.stop();
+
+            // if (hour >= 19 || hour <= 4)
+            //     enableDarkMode();
+
+            if (document.body) document.body.classList.remove('loading-page');
         </script>
 
 </body>
