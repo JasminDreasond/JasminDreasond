@@ -36,3 +36,26 @@ body {
   height: 500px;
   text-align: center;
 }
+
+.transition-animation,
+.transition-animation h4.title ,
+.transition-animation h5.title {
+  transition: scale 0.4s, font-size 0.4s;
+  transition-timing-function: ease;
+}
+
+img.transition-animation:hover {
+  scale: 1.03;
+}
+
+.transition-animation:hover h4.title {
+  font-size: 1.60rem;
+}
+
+.transition-animation:hover h5.title {
+  font-size: 1.35rem;
+}
+
+.title-banner {
+  max-height: 300px;
+}
