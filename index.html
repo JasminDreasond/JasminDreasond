@@ -38,6 +38,8 @@
 
         const enableDarkMode = (value = true) => {
             document.body.setAttribute('data-bs-theme', value ? 'dark' : 'white');
+            document.querySelector('.container-sky .sky-color').setAttribute('fill', value ? '#010012' : '#93D4F7')
+
             const changeStyle = (classNameBase) => {
                 const classRemove = classNameBase.replace('{value}', value ? 'light' : 'dark');
                 const classAdd = classNameBase.replace('{value}', value ? 'dark' : 'light');
@@ -188,7 +190,7 @@
                         fill="#d6effd" />
                 </svg>
             </defs>
-            <rect height="1000" width="1000" fill="#93D4F7"></rect>
+            <rect class="sky-color" height="1000" width="1000" fill="#93D4F7"></rect>
             <use id="cloud-1" href="#cloud-01-def" x="-400" width="400" />
             <use id="cloud-2" href="#cloud-02-def" x="-300" width="300" />
             <use id="cloud-3" href="#cloud-03-def" x="-100" width="100" />

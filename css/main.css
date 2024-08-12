@@ -16,13 +16,20 @@ body {
 }
 
 .container-sky {
-  background: #93d4f7;
   display: flex;
   height: 100%;
   margin: auto;
   padding: 1em 0;
   width: 100%;
   position: fixed;
+}
+
+[data-bs-theme="white"] .container-sky {
+  background: #93d4f7;
+}
+
+[data-bs-theme="dark"] .container-sky {
+  background: #010012;
 }
 
 #svg {
