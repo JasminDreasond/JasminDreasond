@@ -21,6 +21,10 @@
 
     <link rel="stylesheet" href="./css/main.css" />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Snowstorm/20131208/snowstorm-min.js"
+        integrity="sha512-rMkLONrw50boYG/6Ku0E8VstfWMRn5D0dX3QZS26Mg0rspYq4EHxYOULuPbv9Be2HBbrrmN8dpPgYUeJ4bINCA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
         integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -42,6 +46,23 @@
     <link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#a21632">
     <link rel="icon" href="./img/favicons/favicon.ico">
     <meta name="theme-color" content="#a21632">
+
+    <script id="snow-storm-script">
+        snowStorm.autoStart = false;
+        snowStorm.snowColor = '#ffffff';   // blue-ish snow!?
+        snowStorm.flakesMaxActive = 96;    // show more snow on screen at once
+        snowStorm.flakesMax = 128;
+        snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
+        snowStorm.usePositionFixed = true;
+        snowStorm.vMaxX = 8;
+        snowStorm.vMaxY = 5;
+        snowStorm.followMouse = true;
+
+        snowStorm.stop();
+        const month = moment().month();
+        if (month >= 10)
+            snowStorm.resume();
+    </script>
 
 </head>
 
