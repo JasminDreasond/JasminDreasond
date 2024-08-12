@@ -26,9 +26,10 @@ body {
   --bs-btn-bg: #333;
 }
 
-.rainbowText, .rainbowText > span {
-  text-shadow: 0.1px 0 #000, -0.1px 0 #000, 0 0.1px #000, 0 -0.1px #000, 1px 1px #000,
-    -1px -1px #000, 1px -1px #000, -1px 1px #000;
+.rainbowText,
+.rainbowText > span {
+  text-shadow: 0.1px 0 #000, -0.1px 0 #000, 0 0.1px #000, 0 -0.1px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
 }
 
 .tiny-info-content {
@@ -38,7 +39,8 @@ body {
 }
 
 .transition-animation,
-.transition-animation h4.title ,
+.transition-animation .rainbowText,
+.transition-animation h4.title,
 .transition-animation h5.title {
   transition: scale 0.4s, font-size 0.4s;
   transition-timing-function: ease;
@@ -48,8 +50,12 @@ img.transition-animation:hover {
   scale: 1.03;
 }
 
+.transition-animation .rainbowText:hover {
+  font-size: 1.8rem;
+}
+
 .transition-animation:hover h4.title {
-  font-size: 1.60rem;
+  font-size: 1.6rem;
 }
 
 .transition-animation:hover h5.title {
