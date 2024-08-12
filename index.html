@@ -24,6 +24,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Snowstorm/20131208/snowstorm-min.js"
         integrity="sha512-rMkLONrw50boYG/6Ku0E8VstfWMRn5D0dX3QZS26Mg0rspYq4EHxYOULuPbv9Be2HBbrrmN8dpPgYUeJ4bINCA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script id="snow-storm-script">
+        snowStorm.targetElement = 'snow-storm-container';
+        snowStorm.autoStart = false;
+        snowStorm.snowColor = '#ffffff';   // blue-ish snow!?
+        snowStorm.flakesMaxActive = 96;    // show more snow on screen at once
+        snowStorm.flakesMax = 128;
+        snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
+        snowStorm.usePositionFixed = true;
+        snowStorm.vMaxX = 8;
+        snowStorm.vMaxY = 5;
+        snowStorm.followMouse = true;
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
         integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
@@ -47,27 +59,11 @@
     <link rel="icon" href="./img/favicons/favicon.ico">
     <meta name="theme-color" content="#a21632">
 
-    <script id="snow-storm-script">
-        snowStorm.autoStart = false;
-        snowStorm.snowColor = '#ffffff';   // blue-ish snow!?
-        snowStorm.flakesMaxActive = 96;    // show more snow on screen at once
-        snowStorm.flakesMax = 128;
-        snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
-        snowStorm.usePositionFixed = true;
-        snowStorm.vMaxX = 8;
-        snowStorm.vMaxY = 5;
-        snowStorm.followMouse = true;
-
-        snowStorm.stop();
-        const month = moment().month();
-        if (month >= 10)
-            snowStorm.resume();
-    </script>
-
 </head>
 
 <body data-bs-theme="white">
 
+    <div id="snow-storm-container"></div>
     <div class="container-sky">
         <svg id="svg" viewBox="0 0 1000 500" width="365">
             <defs>
@@ -643,6 +639,13 @@
             id="browser-ponies-script"></script>
         <script
             type="text/javascript">/* <![CDATA[ */ (function (cfg) { BrowserPonies.setBaseUrl(cfg.baseurl); BrowserPonies.loadConfig(BrowserPoniesBaseConfig); BrowserPonies.loadConfig(cfg); })({ "baseurl": "https://browser.pony.house/", "fadeDuration": 500, "volume": 1, "fps": 25, "speed": 3, "audioEnabled": false, "showFps": false, "showLoadProgress": true, "speakProbability": 0.1, "spawn": { "fluttershy": 1, "sphinx": 1 }, "autostart": true }); /* ]]> */</script>
+
+        <script type="text/javascript">
+            const month = moment().month();
+            if (month >= 10)
+                snowStorm.resume();
+            else snowStorm.stop();
+        </script>
 
 </body>
 

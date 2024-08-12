@@ -4,6 +4,17 @@ body {
   margin: 0;
 }
 
+#snow-storm-container {
+  overflow: hidden !important;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 19000000;
+}
+
 .container-sky {
   background: #93d4f7;
   display: flex;
