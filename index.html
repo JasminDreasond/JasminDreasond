@@ -35,6 +35,27 @@
         snowStorm.vMaxX = 8;
         snowStorm.vMaxY = 5;
         snowStorm.followMouse = true;
+
+        const enableDarkMode = (value = true) => {
+            document.body.setAttribute('data-bs-theme', value ? 'dark' : 'white');
+            const changeStyle = (classNameBase) => {
+                const classRemove = classNameBase.replace('{value}', value ? 'light' : 'dark');
+                const classAdd = classNameBase.replace('{value}', value ? 'dark' : 'light');
+
+                const borderLight = document.querySelectorAll(`.${classRemove}`);
+                if (borderLight.length > 0) {
+                    for (const item in borderLight) {
+                        if (borderLight[item].classList && borderLight[item].classList.add) {
+                            borderLight[item].classList.add(classAdd);
+                            borderLight[item].classList.remove(classRemove);
+                        }
+                    }
+                }
+            };
+
+            changeStyle(`border-{value}-subtle`);
+            changeStyle(`bg-{value}`);
+        };
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
