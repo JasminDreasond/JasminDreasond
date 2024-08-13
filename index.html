@@ -85,8 +85,8 @@
 
     <script type="text/javascript">
         const hour = moment().hour();
-        // if (hour >= 19 || hour <= 4)
-        //     enableDarkMode();
+        if (hour >= 19 || hour <= 4)
+            enableDarkMode();
     </script>
 
 </head>
@@ -698,8 +698,8 @@
                 snowStorm.resume();
             else snowStorm.stop();
 
-            // if (hour >= 19 || hour <= 4)
-            //     enableDarkMode();
+            if (hour >= 19 || hour <= 4)
+                enableDarkMode();
 
             if (document.body) document.body.classList.remove('loading-page');
         </script>
