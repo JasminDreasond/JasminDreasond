@@ -94,3 +94,14 @@ img.transition-animation:hover {
   max-height: 190px;
   border-radius: 15px;
 }
+
+#browser-ponies img {
+  transition: scale 0.2s;
+  transition-timing-function: ease;
+  cursor: pointer;
+}
+
+#browser-ponies img:hover {
+  scale: 1.03;
+  image-rendering: pixelated;
+}
