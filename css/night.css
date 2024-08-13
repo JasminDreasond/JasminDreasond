@@ -1,7 +1,19 @@
 /* All credits to interaminense --> https://github.com/interaminense/starry-sky */
 
 [data-bs-theme="dark"] .container-sky {
-  background: #010012;
+  background-color: #010012;
+
+  /*
+    rgb(0, 0, 0) 50%,
+    rgb(25, 19, 39) 80%,
+    rgb(43, 32, 72)
+  */
+  background: -webkit-linear-gradient(
+    top,
+    #010012 50%,
+    rgb(18, 13, 27) 80%,
+    rgb(25, 19, 39)
+  );
 }
 
 [data-bs-theme="dark"] .container-sky [id^="cloud-"] {
@@ -19,19 +31,6 @@
 
 [data-bs-theme="dark"] .container-sky .moon {
   z-index: -1;
-}
-
-[data-bs-theme="dark"] .container-sky .night {
-  background: -webkit-linear-gradient(
-    top,
-    rgb(0, 0, 0) 50%,
-    rgb(25, 19, 39) 80%,
-    rgb(43, 32, 72)
-  );
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
 }
 
 [data-bs-theme="dark"] .container-sky .stars {
