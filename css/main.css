@@ -101,3 +101,10 @@ img.transition-animation:hover {
 #browser-ponies img:hover {
   scale: 1.03;
 }
+
+[data-bs-theme="white"] .container-sky .night,
+[data-bs-theme="white"] .container-sky .stars,
+[data-bs-theme="white"] .container-sky .meteors,
+[data-bs-theme="white"] .container-sky .moon {
+  display: none !important;
+}
