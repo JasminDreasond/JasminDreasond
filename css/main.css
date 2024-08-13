@@ -108,3 +108,15 @@ img.transition-animation:hover {
 [data-bs-theme="white"] .container-sky .moon {
   display: none !important;
 }
+
+.tiny-left-image {
+  max-height: 300px;
+  width: auto;
+  float: left;
+}
+
+.tiny-right-image {
+  max-height: 300px;
+  width: auto;
+  float: right;
+}
