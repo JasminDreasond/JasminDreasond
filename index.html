@@ -83,7 +83,8 @@
     <meta name="theme-color" content="#a21632">
 
     <script type="text/javascript">
-        const hour = moment().hour();
+        const timeNow = moment();
+        const hour = timeNow.hour();
         if (hour >= 19 || hour <= 4)
             enableDarkMode();
     </script>
@@ -695,7 +696,7 @@
             id="browser-ponies-script"></script>
 
         <script type="text/javascript">
-            const month = moment().month();
+            const month = timeNow.month();
             if (month >= 10)
                 snowStorm.resume();
             else snowStorm.stop();
