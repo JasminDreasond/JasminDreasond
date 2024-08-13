@@ -99,9 +99,9 @@ img.transition-animation:hover {
   transition: scale 0.2s;
   transition-timing-function: ease;
   cursor: pointer;
+  image-rendering: pixelated;
 }
 
 #browser-ponies img:hover {
   scale: 1.03;
-  image-rendering: pixelated;
 }
