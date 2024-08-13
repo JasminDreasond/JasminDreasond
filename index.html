@@ -689,11 +689,10 @@
 
         <script src="./js/age.js"></script>
         <script type="text/javascript" src="./js/rainbow.js"></script>
+
         <script type="text/javascript" src="https://browser.pony.house/js/ponybase.js"></script>
         <script type="text/javascript" src="https://browser.pony.house/js/browserponies.js"
             id="browser-ponies-script"></script>
-        <script
-            type="text/javascript">/* <![CDATA[ */ (function (cfg) { BrowserPonies.setBaseUrl(cfg.baseurl); BrowserPonies.loadConfig(BrowserPoniesBaseConfig); BrowserPonies.loadConfig(cfg); })({ "baseurl": "https://browser.pony.house/", "fadeDuration": 500, "volume": 1, "fps": 25, "speed": 3, "audioEnabled": false, "showFps": false, "showLoadProgress": true, "speakProbability": 0.1, "spawn": { "fluttershy": 1, "sphinx": 1 }, "autostart": true }); /* ]]> */</script>
 
         <script type="text/javascript">
             const month = moment().month();
@@ -701,10 +700,32 @@
                 snowStorm.resume();
             else snowStorm.stop();
 
-            if (hour >= 19 || hour <= 4)
+            const spawnPonies = { "sphinx": 1 };
+            if (hour >= 19 || hour <= 4) {
                 enableDarkMode();
+                spawnPonies['flutterbat'] = 1;
+            } else {
+                spawnPonies['fluttershy'] = 1;
+            }
 
             if (document.body) document.body.classList.remove('loading-page');
+            (function (cfg) {
+                BrowserPonies.setBaseUrl(cfg.baseurl);
+                BrowserPonies.loadConfig(BrowserPoniesBaseConfig);
+                BrowserPonies.loadConfig(cfg);
+            })({
+                baseurl: "https://browser.pony.house/",
+                fadeDuration: 500,
+                volume: 1,
+                fps: 25,
+                speed: 3,
+                audioEnabled: false,
+                showFps: false,
+                showLoadProgress: true,
+                speakProbability: 0.1,
+                spawn: spawnPonies,
+                autostart: true
+            });
         </script>
 
         <script type="text/javascript" src="./js/night.js"></script>
