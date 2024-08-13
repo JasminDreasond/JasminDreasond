@@ -9,7 +9,19 @@
 [data-bs-theme="white"] .container-sky .stars,
 [data-bs-theme="white"] .container-sky .meteors,
 [data-bs-theme="white"] .container-sky .moon {
-    display: none !important;
+  display: none !important;
+}
+
+[data-bs-theme="dark"] .container-sky .stars {
+  z-index: -3;
+}
+
+[data-bs-theme="dark"] .container-sky .meteors {
+  z-index: -2;
+}
+
+[data-bs-theme="dark"] .container-sky .moon {
+  z-index: -1;
 }
 
 [data-bs-theme="dark"] .container-sky .night {
