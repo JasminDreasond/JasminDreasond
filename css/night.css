@@ -1,5 +1,9 @@
 /* All credits to interaminense --> https://github.com/interaminense/starry-sky */
 
+[data-bs-theme="dark"] .container-sky {
+  background: #010012;
+}
+
 [data-bs-theme="dark"] .container-sky [id^="cloud-"] {
   filter: hue-rotate(40deg) brightness(20%);
   opacity: 0.8;

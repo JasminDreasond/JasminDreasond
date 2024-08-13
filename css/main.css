@@ -38,10 +38,6 @@ body.loading-page {
   background: #93d4f7;
 }
 
-[data-bs-theme="dark"] .container-sky {
-  background: #010012;
-}
-
 #svg {
   /* border: 1px solid #fff; */
   display: block;
