@@ -1,5 +1,5 @@
 window.addEventListener("load", function () {
-    var elements = document.getElementsByClassName("rainbowText");
+    let elements = document.getElementsByClassName("rainbowText");
     for (let i = 0; i < elements.length; i++) {
         generateRainbowText(elements[i]);
     }
@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
 function generateRainbowText(element) {
     let tinyCount = 0;
     const rainbowTime = () => {
-        var text = element.innerText;
+        let text = element.innerText;
         element.innerHTML = "";
         for (let i = 0; i < text.length; i++) {
             let charElem = document.createElement("span");

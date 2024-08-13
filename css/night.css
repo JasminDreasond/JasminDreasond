@@ -1,0 +1,285 @@
+/* All credits to interaminense --> https://github.com/interaminense/starry-sky */
+
+[data-bs-theme="dark"] .container-sky [id^="cloud-"] {
+  filter: hue-rotate(40deg);
+  opacity: 0.2;
+}
+
+[data-bs-theme="white"] .container-sky .night,
+[data-bs-theme="white"] .container-sky .stars,
+[data-bs-theme="white"] .container-sky .meteors,
+[data-bs-theme="white"] .container-sky .moon {
+    display: none !important;
+}
+
+[data-bs-theme="dark"] .container-sky .night {
+  background: -webkit-linear-gradient(
+    top,
+    rgb(0, 0, 0) 50%,
+    rgb(25, 19, 39) 80%,
+    rgb(43, 32, 72)
+  );
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+[data-bs-theme="dark"] .container-sky .stars {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* animation: rotate 600s infinite linear; */
+}
+
+[data-bs-theme="dark"] .container-sky .star {
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  animation-name: star;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+[data-bs-theme="dark"] .container-sky .star.style1 {
+  animation-duration: 0.5s;
+  animation-name: star;
+}
+[data-bs-theme="dark"] .container-sky .star.style2 {
+  animation-duration: 1s;
+  animation-name: star;
+}
+[data-bs-theme="dark"] .container-sky .star.style3 {
+  animation-duration: 1.5s;
+  animation-name: star;
+}
+[data-bs-theme="dark"] .container-sky .star.style4 {
+  animation-duration: 2s;
+  animation-name: showStar;
+}
+
+[data-bs-theme="dark"] .container-sky .star.tam1 {
+  width: 1px;
+  height: 1px;
+}
+[data-bs-theme="dark"] .container-sky .star.tam2 {
+  width: 2px;
+  height: 2px;
+}
+[data-bs-theme="dark"] .container-sky .star.tam3 {
+  width: 3px;
+  height: 3px;
+}
+
+[data-bs-theme="dark"] .container-sky .star.opacity1 {
+  opacity: 1;
+}
+[data-bs-theme="dark"] .container-sky .star.opacity2 {
+  opacity: 0.5;
+}
+[data-bs-theme="dark"] .container-sky .star.opacity3 {
+  opacity: 0.1;
+}
+
+[data-bs-theme="dark"] .container-sky .meteor {
+  position: absolute;
+  background-color: #fff;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  transform: rotate(-35deg);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+[data-bs-theme="dark"] .container-sky .meteor:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 0;
+  height: 0;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-left: 85px solid white;
+  position: absolute;
+  left: 2px;
+  top: 0;
+}
+
+[data-bs-theme="dark"] .container-sky .meteor.style1 {
+  animation-name: meteorStyle1;
+}
+[data-bs-theme="dark"] .container-sky .meteor.style2 {
+  animation-name: meteorStyle2;
+}
+[data-bs-theme="dark"] .container-sky .meteor.style3 {
+  animation-name: meteorStyle3;
+}
+[data-bs-theme="dark"] .container-sky .meteor.style4 {
+  animation-name: meteorStyle4;
+}
+
+[data-bs-theme="dark"] .container-sky .moon {
+  position: absolute;
+  right: 200px;
+  top: 150px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff,
+    0 0 8px 2px rgba(255, 255, 255, 0.26);
+  background-color: #fff;
+  animation-name: moon;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+}
+
+[data-bs-theme="dark"] .container-sky .moon .texture {
+  background-image: url(../img/sky/moon.png);
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0.4;
+}
+
+@keyframes star {
+  0% {
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.05);
+  }
+  50% {
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.05);
+  }
+}
+
+@keyframes showStar {
+  0% {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 1);
+  }
+  20% {
+    background-color: #ffc4c4;
+    box-shadow: 0 0 10px 0px rgb(255, 196, 196, 1);
+  }
+  80% {
+    background-color: #c4cfff;
+    box-shadow: 0 0 10px 0px rgb(196, 207, 255, 1);
+  }
+  100% {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.2);
+  }
+}
+
+@keyframes meteorStyle1 {
+  0% {
+    opacity: 0;
+    right: 300px;
+    top: 100px;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+    right: 1000px;
+    top: 600px;
+  }
+}
+
+@keyframes meteorStyle2 {
+  0% {
+    opacity: 0;
+    right: 700px;
+    top: 100px;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    right: 1400px;
+    top: 600px;
+  }
+}
+
+@keyframes meteorStyle3 {
+  0% {
+    opacity: 0;
+    right: 300px;
+    top: 300px;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    right: 1000px;
+    top: 800px;
+  }
+}
+
+@keyframes meteorStyle4 {
+  0% {
+    opacity: 0;
+    right: 700px;
+    top: 300px;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    right: 1400px;
+    top: 800px;
+  }
+}
+
+@keyframes moon {
+  0% {
+    box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff,
+      0 0 8px 2px rgba(255, 255, 255, 0.26);
+  }
+  50% {
+    box-shadow: 0 0 80px 0px #fff, 0 0 30px -4px #fff,
+      0 0 8px 2px rgba(255, 255, 255, 0.26);
+  }
+  100% {
+    box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff,
+      0 0 8px 2px rgba(255, 255, 255, 0.26);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}

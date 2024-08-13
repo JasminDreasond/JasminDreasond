@@ -20,6 +20,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/night.css" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Snowstorm/20131208/snowstorm-min.js"
         integrity="sha512-rMkLONrw50boYG/6Ku0E8VstfWMRn5D0dX3QZS26Mg0rspYq4EHxYOULuPbv9Be2HBbrrmN8dpPgYUeJ4bINCA=="
@@ -38,8 +39,6 @@
 
         const enableDarkMode = (value = true) => {
             if (document.body) document.body.setAttribute('data-bs-theme', value ? 'dark' : 'white');
-            const skyColor = document.querySelector('.container-sky .sky-color');
-            if (skyColor) skyColor.setAttribute('fill', value ? '#010012' : '#93D4F7')
 
             const changeStyle = (classNameBase) => {
                 const classRemove = classNameBase.replace('{value}', value ? 'light' : 'dark');
@@ -197,7 +196,6 @@
                         fill="#d6effd" />
                 </svg>
             </defs>
-            <rect class="sky-color" height="1000" width="1000" fill="#93D4F7"></rect>
             <use id="cloud-1" href="#cloud-01-def" x="-400" width="400" />
             <use id="cloud-2" href="#cloud-02-def" x="-300" width="300" />
             <use id="cloud-3" href="#cloud-03-def" x="-100" width="100" />
@@ -211,6 +209,11 @@
             <use id="cloud-11" href="#cloud-11-def" x="-500" width="500" />
             <use id="cloud-12" href="#cloud-11-def" x="-450" width="450" />
         </svg>
+        <div class="stars"></div>
+        <div class="meteors"></div>
+        <div class="moon">
+            <div class="texture"></div>
+        </div>
         <script src="./js/sky.js"></script>
     </div>
 
@@ -703,6 +706,8 @@
 
             if (document.body) document.body.classList.remove('loading-page');
         </script>
+
+        <script type="text/javascript" src="./js/night.js"></script>
 
 </body>
 
