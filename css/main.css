@@ -50,8 +50,8 @@ body.loading-page {
   --bs-btn-bg: #333;
 }
 
-.rainbowText,
-.rainbowText > span {
+.username-title,
+.username-title > span {
   text-shadow: 0.1px 0 #000, -0.1px 0 #000, 0 0.1px #000, 0 -0.1px #000,
     1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
 }
@@ -63,7 +63,7 @@ body.loading-page {
 }
 
 .transition-animation,
-.transition-animation .rainbowText,
+.transition-animation .username-title,
 .transition-animation h4.title,
 .transition-animation h5.title {
   transition: scale 0.4s, font-size 0.4s;
@@ -74,7 +74,7 @@ img.transition-animation:hover {
   scale: 1.03;
 }
 
-.transition-animation .rainbowText:hover {
+.transition-animation .username-title:hover {
   font-size: 1.8rem;
 }
 
