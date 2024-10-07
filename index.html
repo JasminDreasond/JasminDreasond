@@ -121,7 +121,10 @@
     <script type="text/javascript">
         const timeNow = moment();
         const hour = timeNow.hour();
-        enableDarkMode(hour >= 19 || hour <= 4 ? true : false);
+        const setTimeMode = () => {
+            enableDarkMode(hour >= 19 || hour <= 4 ? true : false);
+        };
+        setTimeMode();
     </script>
 
 </head>
@@ -763,11 +766,12 @@
 
             const spawnPonies = { "sphinx": 1 };
             if (hour >= 19 || hour <= 4) {
-                enableDarkMode();
                 spawnPonies['flutterbat'] = 1;
             } else {
                 spawnPonies['fluttershy'] = 1;
             }
+
+            setTimeMode();
 
             if (document.body) document.body.classList.remove('loading-page');
             if (!window.mobileAndTabletCheck()) {
