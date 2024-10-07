@@ -79,20 +79,8 @@
             changeStyle(`border-{value}-subtle`);
             changeStyle(`bg-{value}`);
 
-            const usernameTitle = document.querySelectorAll(`.username-title`);
-            if (usernameTitle) {
-                if (usernameTitle.length > 0) {
-                    for (const item in usernameTitle) {
-                        if (typeof usernameTitle[item].classList === 'function') {
-                            if (!value)
-                                usernameTitle[item].classList.add('rainbowText');
-                            else
-                                usernameTitle[item].classList.remove('rainbowText');
-                        }
-                    }
-                }
+            if (!value)
                 rainbowTextStart();
-            }
         };
     </script>
 
@@ -267,7 +255,7 @@
 
                             <div class="row transition-animation">
                                 <div class="col-12">
-                                    <h4 class="username-title text-center">Tiny Jasmini (Yasmin Seidel)</h4>
+                                    <h4 class="username-title text-center rainbowText">Tiny Jasmini (Yasmin Seidel)</h4>
                                     <div class="text-center mb-4">
                                         <img src="./img/banner.jpg" class="img-fluid title-banner transition-animation"
                                             alt="Tiny Logo" />

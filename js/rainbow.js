@@ -1,4 +1,4 @@
-window.addEventListener("load", rainbowTextStart);
+// window.addEventListener("load", rainbowTextStart);
 
 function generateRainbowText(element, speed = 90) {
     if (!element.hasAttribute('rainbow-text-enabled')) {
