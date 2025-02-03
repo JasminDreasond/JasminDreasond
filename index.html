@@ -372,11 +372,11 @@
                                                 class="fa-brands fa-steam" style="color: #66c0f4;"></i> Steam
                                             (Games)</a>
                                         <a target="_blank" rel="me" href="https://rarible.com/JasminDreasond"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
+                                            class="btn btn-dark mx-2 mb-2 text-decoration-none web3-item"><i
                                                 class="fa-solid fa-registered" style="color: #FEDA03;"></i> Rarible
                                             (NFT)</a>
                                         <a target="_blank" rel="me" href="https://opensea.io/JasminDreasond"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
+                                            class="btn btn-dark mx-2 mb-2 text-decoration-none web3-item"><i
                                                 class="fa-solid fa-sailboat" style="color: #4375ff;"></i> Opensea
                                             (NFT)</a>
                                     </p>
@@ -480,7 +480,7 @@
 
                                 <hr class="my-4 border-secondary-subtle" />
                                 <span class="transition-animation">
-                                    <h4 id="acceptable-blockchains" class="title">Acceptable Blockchains
+                                    <h4 id="acceptable-blockchains" class="title">Payment Blockchains
                                         (This does not affect donations)
                                     </h4>
                                     <p>
@@ -500,9 +500,9 @@
                                     </p>
                                 </span>
 
-                                <hr class="my-4 border-secondary-subtle" />
+                                <hr class="my-4 border-secondary-subtle web3-item" />
                                 <span class="transition-animation">
-                                    <h4 id="acceptable-web3-blockchains" class="title">Acceptable Web3
+                                    <h4 id="acceptable-web3-blockchains" class="title">Payment Web3
                                         Blockchains (This does not affect
                                         donations)
                                     </h4>
@@ -754,6 +754,11 @@
             id="browser-ponies-script"></script>
 
         <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function () {
+                if (typeof window.ethereum !== "undefined") {
+                    document.body.classList.add("web3-mode");
+                }
+            });
             const month = timeNow.month();
             if (month >= 10)
                 snowStorm.resume();

@@ -14,6 +14,10 @@ body.loading-page {
   opacity: 0;
 }
 
+body:not(.web3-mode) .web3-item {
+  display: none;
+}
+
 #snow-storm-container {
   overflow: hidden !important;
   min-height: 100%;
