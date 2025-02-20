@@ -263,280 +263,360 @@
                                     <div class="text-center mb-2">Timezone <span id="timezone"></span></div>
                                     <h5 class="text-center">Welcome to my tiny personal page!</h5>
                                     <div class="text-center small">She/Her | Trans MtF | <span id="age">???</span> Old |
-                                        Artist | Writer | Developer | Crypto User/Developer | Linux User | Brazil,
+                                        Brazil,
                                         Espírito Santo, Vitória</div>
                                     <div class="text-center small">Birthday 03/16/1997</div>
                                 </div>
                             </div>
 
-                            <nav id="tiny-info"
-                                class="navbar bg-light px-3 mt-3 border-top border-start border-end rounded-top-2">
-                                <a class="navbar-brand text-decoration-none" href="#">Links</a>
-                                <ul class="nav nav-pills">
+                            <div class="container mt-5">
+                                <!-- Link categories -->
+                                <ul class="nav nav-pills d-flex justify-content-center gap-3">
                                     <li class="nav-item">
-                                        <a class="nav-link text-decoration-none" href="#my-websites">My Websites</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-decoration-none" href="#pages">Pages</a>
+                                        <a class="nav-link border-bottom" id="websites-tab" href="#websites"
+                                            data-bs-toggle="pill">Websites</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-decoration-none" href="#art">Art</a>
+                                        <a class="nav-link border-bottom" id="pages-tab" href="#pages"
+                                            data-bs-toggle="pill">Pages</a>
                                     </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle text-decoration-none"
-                                            data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Tiny
-                                            Money</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item text-decoration-none"
-                                                    href="#tiny-donations">Donations</a></li>
-                                            <li><a class="dropdown-item text-decoration-none"
-                                                    href="#payment-methods">Payment methods</a>
-                                            </li>
-                                            <li><a class="dropdown-item text-decoration-none"
-                                                    href="#acceptable-blockchains">Acceptable
-                                                    Blockchains</a></li>
-                                            <li><a class="dropdown-item text-decoration-none"
-                                                    href="#acceptable-web3-blockchains">Acceptable
-                                                    Web3 Blockchains</a></li>
-                                        </ul>
+                                    <li class="nav-item">
+                                        <a class="nav-link border-bottom" id="art-tab" href="#art"
+                                            data-bs-toggle="pill">Art</a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link border-bottom" id="donations-tab" href="#donations"
+                                            data-bs-toggle="pill">Tiny Donations</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link border-bottom" id="payment-methods-tab"
+                                            href="#payment-methods" data-bs-toggle="pill">Payment methods</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link border-bottom" id="acceptable-blockchains-tab"
+                                            href="#acceptable-blockchains" data-bs-toggle="pill">Acceptable
+                                            Blockchains</a>
+                                    </li>
+                                    <li class="nav-item web3-item">
+                                        <a class="nav-link border-bottom" id="acceptable-web3-blockchains-tab"
+                                            href="#acceptable-web3-blockchains" data-bs-toggle="pill">Acceptable Web3
+                                            Blockchains</a>
+                                    </li>
+
                                 </ul>
-                            </nav>
-                            <div class="tiny-info-content border pt-3 bg-light p-3 rounded-bottom-2"
-                                data-bs-spy="scroll" data-bs-target="#tiny-info" data-bs-root-margin="0px 0px -40%"
-                                data-bs-smooth-scroll="true" tabindex="0">
 
-                                <span class="transition-animation">
-                                    <h4 id="my-websites" class="title">My Websites</h4>
-                                    <p>
-                                        <a target="_blank" href="https://puddy.club/"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-solid fa-house" style="color: #ffca38;"></i> Puddy
-                                            Club (Tiny Apps)</a>
-                                        <a target="_blank" href="https://browser.pony.house/"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-solid fa-heart" style="color: #c8f5f5;"></i> Browser
-                                            Ponies (Fun)</a>
-                                        <a target="_blank" href="https://client.pony.house/"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none" text-decoration-none><i
-                                                class="fa-brands fa-rocketchat" style="color: #5dffff;"></i> Pony
-                                            House (Matrix Client)</a>
-                                        <a target="_blank" href="https://ponydriland.com/"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-solid fa-book" style="color: #f5517a;"></i> Pony
-                                            Driland (Fic)</a>
-                                    </p>
-                                </span>
+                                <!-- Conteúdo das Categorias -->
+                                <div class="tab-content mt-3">
+                                    <!-- Websites -->
+                                    <div class="tab-pane fade category-content" id="websites">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <a href="https://puddy.club/" target="_blank"
+                                                    class="text-decoration-none" rel="me">
+                                                    <i class="fa-solid fa-house" style="color: #ffca38;"></i> Puddy Club
+                                                    (Tiny Apps)
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="https://browser.pony.house/" target="_blank"
+                                                    class="text-decoration-none" rel="me">
+                                                    <i class="fa-solid fa-heart" style="color: #c8f5f5;"></i> Browser
+                                                    Ponies (Fun)
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="https://client.pony.house/" target="_blank"
+                                                    class="text-decoration-none" rel="me">
+                                                    <i class="fa-brands fa-rocketchat" style="color: #5dffff;"></i> Pony
+                                                    House (Matrix Client)
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="https://ponydriland.com/" target="_blank"
+                                                    class="text-decoration-none" rel="me">
+                                                    <i class="fa-solid fa-book" style="color: #f5517a;"></i> Pony
+                                                    Driland (Fic)
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
 
-                                <hr class="my-4 border-secondary-subtle" />
-                                <span class="transition-animation">
-                                    <h4 id="pages" class="title">Pages</h4>
-                                    <p>
-                                        <a target="_blank" rel="me" href="https://discord.gg/TgHdvJd"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-brands fa-discord" style="color: #7289da;"></i>
-                                            Discord Server</a>
-                                        <a target="_blank" rel="me" href="https://medium.com/@JasminDreasond"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-brands fa-medium" style="color: #ffffff;"></i>
-                                            Medium</a>
-                                        <a target="_blank" rel="me" href="https://en.pronouns.page/@JasminDreasond"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-solid fa-transgender" style="color: #51f5b0;"></i>
-                                            Pronouns.Page (Pronoun)</a>
-                                        <a target="_blank" rel="me" href="https://github.com/JasminDreasond"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-brands fa-github" style="color: #2dba4e;"></i> Github
-                                            (Codes)</a>
-                                        <a target="_blank" rel="me" href="https://gitlab.com/JasminDreasond"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-brands fa-gitlab" style="color: #fc6d27;"></i> Gitlab
-                                            (Codes)</a>
-                                        <a target="_blank" rel="me" href="https://x.com/JasminDreasond"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-brands fa-x-twitter" style="color: #1da1f2;"></i> X
-                                            (Twitter)</a>
-                                        <a target="_blank" rel="me" href="https://equestria.social/@JasminDreasond"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-brands fa-mastodon" style="color: #6364ff;"></i>
-                                            Equestria Social (Mastodon)</a>
-                                        <a target="_blank" rel="me" href="https://kookie.app/@JasminDreasond"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-solid fa-cookie" style="color: #0bdbb6;"></i> Kookie</a>
-                                        <a target="_blank" rel="me" href="https://www.youtube.com/@JasminDreasond"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-brands fa-youtube" style="color: #ff0000;"></i> Youtube
-                                            (Videos)</a>
-                                        <a target="_blank" rel="me" href="https://steamcommunity.com/id/JasminDreasond"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-brands fa-steam" style="color: #66c0f4;"></i> Steam
-                                            (Games)</a>
-                                        <a target="_blank" rel="me" href="https://rarible.com/JasminDreasond"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none web3-item"><i
-                                                class="fa-solid fa-registered" style="color: #FEDA03;"></i> Rarible
-                                            (NFT)</a>
-                                        <a target="_blank" rel="me" href="https://opensea.io/JasminDreasond"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none web3-item"><i
-                                                class="fa-solid fa-sailboat" style="color: #4375ff;"></i> Opensea
-                                            (NFT)</a>
-                                    </p>
-                                </span>
+                                    <!-- Pages -->
+                                    <div class="tab-pane fade category-content" id="pages">
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    rel="me" href="https://discord.gg/TgHdvJd"><i
+                                                        class="fa-brands fa-discord" style="color: #7289da;"></i>
+                                                    Discord Server</a></li>
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    rel="me" href="https://medium.com/@JasminDreasond"><i
+                                                        class="fa-brands fa-medium" style="color: #ffffff;"></i>
+                                                    Medium</a></li>
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    rel="me" href="https://en.pronouns.page/@JasminDreasond"><i
+                                                        class="fa-solid fa-transgender" style="color: #51f5b0;"></i>
+                                                    Pronouns.Page (Pronoun)</a></li>
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    rel="me" href="https://github.com/JasminDreasond"><i
+                                                        class="fa-brands fa-github" style="color: #2dba4e;"></i> Github
+                                                    (Codes)</a></li>
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    rel="me" href="https://gitlab.com/JasminDreasond"><i
+                                                        class="fa-brands fa-gitlab" style="color: #fc6d27;"></i> Gitlab
+                                                    (Codes)</a></li>
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    rel="me" href="https://x.com/JasminDreasond"><i
+                                                        class="fa-brands fa-x-twitter" style="color: #1da1f2;"></i> X
+                                                    (Twitter)</a></li>
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    rel="me" href="https://equestria.social/@JasminDreasond"><i
+                                                        class="fa-brands fa-mastodon" style="color: #6364ff;"></i>
+                                                    Equestria Social (Mastodon)</a></li>
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    rel="me" href="https://kookie.app/@JasminDreasond"><i
+                                                        class="fa-solid fa-cookie" style="color: #0bdbb6;"></i>
+                                                    Kookie</a></li>
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    rel="me" href="https://www.youtube.com/@JasminDreasond"><i
+                                                        class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+                                                    Youtube
+                                                    (Videos)</a></li>
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    rel="me" href="https://steamcommunity.com/id/JasminDreasond"><i
+                                                        class="fa-brands fa-steam" style="color: #66c0f4;"></i> Steam
+                                                    (Games)</a></li>
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    rel="me" href="https://rarible.com/JasminDreasond"
+                                                    class="web3-item"><i class="fa-solid fa-registered"
+                                                        style="color: #FEDA03;"></i>
+                                                    Rarible
+                                                    (NFT)</a></li>
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    rel="me" href="https://opensea.io/JasminDreasond"
+                                                    class="web3-item"><i class="fa-solid fa-sailboat"
+                                                        style="color: #4375ff;"></i>
+                                                    Opensea
+                                                    (NFT)</a></li>
+                                        </ul>
+                                    </div>
 
-                                <hr class="my-4 border-secondary-subtle" />
-                                <span class="transition-animation">
-                                    <h4 id="art" class="title">Art</h4>
-                                    <p>
-                                        <a target="_blank" rel="me" href="https://soundcloud.com/jasmindreasond"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-brands fa-deviantart" style="color: #05cc46;"></i>
-                                            Deviantart (Human Artist)</a>
-                                        <a target="_blank" rel="me" href="https://soundcloud.com/jasmindreasond"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-brands fa-soundcloud" style="color: #ff7700;"></i>
-                                            SoundCloud (Human Artist)</a>
-                                        <a target="_blank" rel="me"
-                                            href="https://derpibooru.org/profiles/JasminDreasond"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-solid fa-paintbrush" style="color: #51f5f5;"></i>
-                                            Derpibooru (Human Artist)</a>
-                                        <a target="_blank" rel="me"
-                                            href="https://tantabus.ai/profiles/JasminDreasond"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-solid fa-paintbrush" style="color: #51f5f5;"></i>
-                                            Tantabus (AI Artist)</a>
-                                        <a target="_blank" rel="me" href="https://civitai.com/user/JasminDreasond"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-solid fa-robot" style="color: #1069eb;"></i>
-                                            CivitAI (AI Artist)</a>
-                                        <a target="_blank" rel="me" href="https://purplesmart.ai/user/me"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-solid fa-horse-head" style="color: #c683eb;"></i>
-                                            PurpleSmart (AI Artist)</a>
-                                    </p>
-                                </span>
+                                    <!-- Art -->
+                                    <div class="tab-pane fade category-content" id="art">
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    rel="me" href="https://www.deviantart.com/JasminDreasond"><i
+                                                        class="fa-brands fa-deviantart" style="color: #05cc46;"></i>
+                                                    Deviantart (Human Artist)</a></li>
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    rel="me" href="https://soundcloud.com/jasmindreasond"><i
+                                                        class="fa-brands fa-soundcloud" style="color: #ff7700;"></i>
+                                                    SoundCloud (Human Artist)</a></li>
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    rel="me" href="https://derpibooru.org/profiles/JasminDreasond"><i
+                                                        class="fa-solid fa-paintbrush" style="color: #51f5f5;"></i>
+                                                    Derpibooru (Human Artist)</a></li>
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    rel="me" href="https://tantabus.ai/profiles/JasminDreasond"><i
+                                                        class="fa-solid fa-paintbrush" style="color: #51f5f5;"></i>
+                                                    Tantabus (AI Artist)</a></li>
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    rel="me" href="https://civitai.com/user/JasminDreasond"><i
+                                                        class="fa-solid fa-robot" style="color: #1069eb;"></i>
+                                                    CivitAI (AI Artist)</a></li>
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    rel="me" href="https://purplesmart.ai/user/me"><i
+                                                        class="fa-solid fa-horse-head" style="color: #c683eb;"></i>
+                                                    PurpleSmart (AI Artist)</a></li>
+                                        </ul>
+                                    </div>
 
-                                <hr class="my-4 border-secondary-subtle" />
-                                <span class="transition-animation">
-                                    <h4 id="tiny-donations" class="title">Tiny Donations</h4>
-                                    <p>
-                                        <a target="_blank" rel="me" href="https://ud.me/jasmindreasond.x"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i class="cf cf-eth"
-                                                style="color: #48cbd9;"></i>
-                                            Web3</a>
-                                        <a target="_blank" href="bitcoin://bc1qnk7upe44xrsll2tjhy5msg32zpnqxvyysyje2g"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i class="cf cf-btc"
-                                                style="color: #f7931a;"></i>
-                                            Bitcoin</a>
-                                        <a target="_blank" href="dogecoin://DJn9GGPYsQSGTi6bHDhfgtUpmivBEnDiMK"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i class="cf cf-doge"
-                                                style="color: #e1b303;"></i> Dogecoin</a>
-                                        <a target="_blank" href="litecoin://ltc1qchk520v4u8334n5dntmgeja55gc5g5rrkgpd4f"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i class="cf cf-ltc"
-                                                style="color: #345D9D;"></i>
-                                            Litecoin</a>
-                                        <a target="_blank" rel="me" href="https://www.patreon.com/JasminDreasond"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-brands fa-patreon" style="color: #f96854;"></i>
-                                            Patreon</a>
-                                        <a target="_blank" rel="me" href="https://ko-fi.com/JasminDreasond"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-solid fa-mug-saucer" style="color: #13C3FF;"></i>
-                                            Ko-Fi</a>
-                                    </p>
-                                </span>
+                                    <!-- Tiny Donations -->
+                                    <div class="tab-pane fade category-content" id="donations">
+                                        <ul class="list-group">
+                                            <li class="list-group-item web3-item"><a target="_blank"
+                                                    class="text-decoration-none" rel="me"
+                                                    href="https://ud.me/jasmindreasond.x"><i class="cf cf-eth"
+                                                        style="color: #48cbd9;"></i>
+                                                    Web3</a></li>
+                                            <li class="list-group-item"><a
+                                                    href="https://donate.stripe.com/bIYeYL3U08a3gsE7st" target="_blank"
+                                                    class="text-decoration-none"><i class="fa-brands fa-stripe-s"
+                                                        style="color: #4379FF;"></i> Stripe</a></li>
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    href="bitcoin://bc1qnk7upe44xrsll2tjhy5msg32zpnqxvyysyje2g"><i
+                                                        class="cf cf-btc" style="color: #f7931a;"></i>
+                                                    Bitcoin</a></li>
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    href="dogecoin://DJn9GGPYsQSGTi6bHDhfgtUpmivBEnDiMK"><i
+                                                        class="cf cf-doge" style="color: #e1b303;"></i> Dogecoin</a>
+                                            </li>
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    href="litecoin://ltc1qchk520v4u8334n5dntmgeja55gc5g5rrkgpd4f"><i
+                                                        class="cf cf-ltc" style="color: #345D9D;"></i>
+                                                    Litecoin</a></li>
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    rel="me" href="https://www.patreon.com/JasminDreasond"><i
+                                                        class="fa-brands fa-patreon" style="color: #f96854;"></i>
+                                                    Patreon</a></li>
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    rel="me" href="https://ko-fi.com/JasminDreasond"><i
+                                                        class="fa-solid fa-mug-saucer" style="color: #13C3FF;"></i>
+                                                    Ko-Fi</a></li>
+                                        </ul>
+                                    </div>
 
-                                <hr class="my-4 border-secondary-subtle" />
-                                <span class="transition-animation">
-                                    <h4 id="payment-methods" class="title">Payment methods (This
-                                        does not affect donations)
-                                    </h4>
-                                    <p>
-                                        USD (Payooner)
-                                        <br />
-                                        Paypal (Crypto Only)
-                                        <br /><br />
-                                        <a href="https://donate.stripe.com/bIYeYL3U08a3gsE7st" target="_blank"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-brands fa-stripe-s" style="color: #4379FF;"></i> Stripe
-                                            (Maybe...)</a>
-                                        <a href="https://patreon.com/JasminDreasond" target="_blank"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-brands fa-patreon" style="color: #f96854;"></i> Patreon (Yay
-                                            :3)</a>
-                                        <a href="https://ud.me/jasmindreasond.x" target="_blank"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-solid fa-dollar-sign" style="color: #79a471;"></i> USDC (USD
-                                            Stable
-                                            Coin)</a>
-                                        <a href="https://ud.me/jasmindreasond.x" target="_blank"
-                                            class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="fa-solid fa-dollar-sign" style="color: #79a471;"></i> USDT (USD
-                                            Stable
-                                            Coin)</a>
-                                        <br />
-                                        Native cryptocurrency from networks in the list below
-                                    </p>
-                                </span>
+                                    <!-- Payment methods -->
+                                    <div class="tab-pane fade category-content" id="payment-methods">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                USD (Payooner)
+                                            </li>
+                                            <li class="list-group-item">
+                                                Paypal (Crypto Only)
+                                            </li>
+                                            <li class="list-group-item"><a target="_blank" class="text-decoration-none"
+                                                    rel="me" href="https://ko-fi.com/JasminDreasond"><i
+                                                        class="fa-solid fa-mug-saucer" style="color: #13C3FF;"></i>
+                                                    Ko-Fi</a></li>
+                                            <li class="list-group-item"><a href="https://patreon.com/JasminDreasond"
+                                                    target="_blank" class="text-decoration-none"><i
+                                                        class="fa-brands fa-patreon" style="color: #f96854;"></i>
+                                                    Patreon (Yay
+                                                    :3)</a></li>
+                                            <li class="list-group-item web3-item"><a
+                                                    href="https://ud.me/jasmindreasond.x" target="_blank"
+                                                    class="text-decoration-none"><i class="fa-solid fa-dollar-sign"
+                                                        style="color: #79a471;"></i> USDC (USD
+                                                    Stable
+                                                    Coin)</a></li>
+                                            <li class="list-group-item web3-item"><a
+                                                    href="https://ud.me/jasmindreasond.x" target="_blank"
+                                                    class="text-decoration-none"><i class="fa-solid fa-dollar-sign"
+                                                        style="color: #79a471;"></i> USDT (USD
+                                                    Stable
+                                                    Coin)</a></li>
+                                        </ul>
+                                    </div>
 
-                                <hr class="my-4 border-secondary-subtle" />
-                                <span class="transition-animation">
-                                    <h4 id="acceptable-blockchains" class="title">Payment Blockchains
-                                        (This does not affect donations)
-                                    </h4>
-                                    <p>
-                                        <a href="https://chain.so/address/BTC/bc1qnk7upe44xrsll2tjhy5msg32zpnqxvyysyje2g"
-                                            target="_blank" class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="cf cf-btc" style="color: #f7931a;"></i> Bitcoin</a>
-                                        <a href="https://www.blockchain.com/explorer/addresses/bch/qqv8jfp6vdc2hdshr9dn0vsuj540k5rqns75t6em9c"
-                                            target="_blank" class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="cf cf-btc" style="color: #0ac18e;"></i> Bitcoin
-                                            Cash</a>
-                                        <a href="https://chain.so/address/LTC/ltc1qchk520v4u8334n5dntmgeja55gc5g5rrkgpd4f"
-                                            target="_blank" class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="cf cf-ltc" style="color: #345D9D;"></i> Litecoin</a>
-                                        <a href="https://dogechain.info/address/DJn9GGPYsQSGTi6bHDhfgtUpmivBEnDiMK"
-                                            target="_blank" class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="cf cf-doge" style="color: #e1b303;"></i> Dogecoin</a>
-                                    </p>
-                                </span>
+                                    <!-- Payment methods -->
+                                    <div class="tab-pane fade category-content" id="acceptable-blockchains">
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><a
+                                                    href="https://chain.so/address/BTC/bc1qnk7upe44xrsll2tjhy5msg32zpnqxvyysyje2g"
+                                                    target="_blank" class="text-decoration-none"><i class="cf cf-btc"
+                                                        style="color: #f7931a;"></i>
+                                                    Bitcoin</a></li>
+                                            <li class="list-group-item"><a
+                                                    href="https://www.blockchain.com/explorer/addresses/bch/qqv8jfp6vdc2hdshr9dn0vsuj540k5rqns75t6em9c"
+                                                    target="_blank" class="text-decoration-none"><i class="cf cf-btc"
+                                                        style="color: #0ac18e;"></i>
+                                                    Bitcoin
+                                                    Cash</a></li>
+                                            <li class="list-group-item"><a
+                                                    href="https://chain.so/address/LTC/ltc1qchk520v4u8334n5dntmgeja55gc5g5rrkgpd4f"
+                                                    target="_blank" class="text-decoration-none"><i class="cf cf-ltc"
+                                                        style="color: #345D9D;"></i>
+                                                    Litecoin</a></li>
+                                            <li class="list-group-item"><a
+                                                    href="https://dogechain.info/address/DJn9GGPYsQSGTi6bHDhfgtUpmivBEnDiMK"
+                                                    target="_blank" class="text-decoration-none"><i class="cf cf-doge"
+                                                        style="color: #e1b303;"></i>
+                                                    Dogecoin</a></li>
+                                        </ul>
+                                    </div>
 
-                                <hr class="my-4 border-secondary-subtle web3-item" />
-                                <span class="transition-animation">
-                                    <h4 id="acceptable-web3-blockchains" class="title">Payment Web3
-                                        Blockchains (This does not affect
-                                        donations)
-                                    </h4>
-                                    <p>
-                                        <a href="https://polygonscan.com/address/0x98d4dC931122118B0fabBaDd5bfF443CeF4E2041"
-                                            target="_blank" class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="cf cf-matic" style="color: #8247e5;"></i> Polygon
-                                            (Primary choose)</a>
+                                    <!-- Payment methods -->
+                                    <div class="tab-pane fade category-content" id="acceptable-web3-blockchains">
+                                        <ul class="list-group web3-item">
+                                            <li class="list-group-item"><a
+                                                    href="https://polygonscan.com/address/0x98d4dC931122118B0fabBaDd5bfF443CeF4E2041"
+                                                    target="_blank" class="text-decoration-none"><i class="cf cf-matic"
+                                                        style="color: #8247e5;"></i>
+                                                    Polygon
+                                                    (Primary choose)</a></li>
 
-                                        <a href="https://optimistic.etherscan.io/address/0x98d4dC931122118B0fabBaDd5bfF443CeF4E2041"
-                                            target="_blank" class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="cf cf-eth" style="color: #ff0420;"></i> Optimistic</a>
-                                        <a href="https://subnets.avax.network/masa/address/0x98d4dC931122118B0fabBaDd5bfF443CeF4E2041"
-                                            target="_blank" class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="cf cf-avax" style="color: #e84142;"></i> Avalanche</a>
-                                        <a href="https://basescan.org/address/0x98d4dC931122118B0fabBaDd5bfF443CeF4E2041"
-                                            target="_blank" class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="cf cf-eth" style="color: #0072ff;"></i> Base</a>
-                                        <a href="https://bscscan.com/address/0x98d4dC931122118B0fabBaDd5bfF443CeF4E2041"
-                                            target="_blank" class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="cf cf-bnb" style="color: #f0b90b;"></i> BSC</a>
-                                        <a href="https://etc.blockscout.com/address/0xbBB226fcBbf7C0bf2E6fcbF4761369af0489a2B3"
-                                            target="_blank" class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="cf cf-eth" style="color: #01c853;"></i> Ethereum
-                                            Classic (ETH only, no
-                                            tokens
-                                            accepted)</a><br />
-                                        <a href="https://etherscan.io/address/0x98d4dC931122118B0fabBaDd5bfF443CeF4E2041"
-                                            target="_blank" class="btn btn-dark mx-2 mb-2 text-decoration-none"><i
-                                                class="cf cf-eth" style="color: #8c8c8c;"></i> Ethereum
-                                            (ETH only, no tokens
-                                            accepted)</a>
-                                    </p>
-                                </span>
+                                            <li class="list-group-item"><a
+                                                    href="https://optimistic.etherscan.io/address/0x98d4dC931122118B0fabBaDd5bfF443CeF4E2041"
+                                                    target="_blank" class="text-decoration-none"><i class="cf cf-eth"
+                                                        style="color: #ff0420;"></i>
+                                                    Optimistic</a></li>
+                                            <li class="list-group-item"><a
+                                                    href="https://subnets.avax.network/masa/address/0x98d4dC931122118B0fabBaDd5bfF443CeF4E2041"
+                                                    target="_blank" class="text-decoration-none"><i class="cf cf-avax"
+                                                        style="color: #e84142;"></i>
+                                                    Avalanche</a></li>
+                                            <li class="list-group-item"><a
+                                                    href="https://basescan.org/address/0x98d4dC931122118B0fabBaDd5bfF443CeF4E2041"
+                                                    target="_blank" class="text-decoration-none"><i class="cf cf-eth"
+                                                        style="color: #0072ff;"></i>
+                                                    Base</a></li>
+                                            <li class="list-group-item"><a
+                                                    href="https://bscscan.com/address/0x98d4dC931122118B0fabBaDd5bfF443CeF4E2041"
+                                                    target="_blank" class="text-decoration-none"><i class="cf cf-bnb"
+                                                        style="color: #f0b90b;"></i>
+                                                    BSC</a></li>
+                                            <li class="list-group-item"><a
+                                                    href="https://etc.blockscout.com/address/0xbBB226fcBbf7C0bf2E6fcbF4761369af0489a2B3"
+                                                    target="_blank" class="text-decoration-none"><i class="cf cf-eth"
+                                                        style="color: #01c853;"></i>
+                                                    Ethereum
+                                                    Classic (ETH only, no
+                                                    tokens
+                                                    accepted)</a></li><br />
+                                            <li class="list-group-item"><a
+                                                    href="https://etherscan.io/address/0x98d4dC931122118B0fabBaDd5bfF443CeF4E2041"
+                                                    target="_blank" class="text-decoration-none"><i class="cf cf-eth"
+                                                        style="color: #8c8c8c;"></i>
+                                                    Ethereum
+                                                    (ETH only, no tokens
+                                                    accepted)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container mt-5">
+                                <h1 class="text-center mb-4">The Skill list</h1>
+                                <div class="row">
+                                    <div class="col-md-3 d-flex">
+                                        <div class="card shadow-sm flex-fill">
+                                            <div class="card-header bg-primary text-white"><i
+                                                    class="fas fa-paint-brush"></i> Human Artist</div>
+                                            <div class="card-body">
+                                                <p>Digital Art, Writer, Musician, Voice Actor.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 d-flex">
+                                        <div class="card shadow-sm flex-fill">
+                                            <div class="card-header bg-success text-white"><i class="fas fa-code"></i>
+                                                Programmer</div>
+                                            <div class="card-body">
+                                                <p>JavaScript, TypeScript, Python (low), Java (low), Lua (low), PHP,
+                                                    HTML, CSS, SQL, Nodejs, Solidity, AI Developer.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 d-flex">
+                                        <div class="card shadow-sm flex-fill">
+                                            <div class="card-header bg-info text-white"><i class="fas fa-robot"></i> AI
+                                                Skills</div>
+                                            <div class="card-body">
+                                                <p>Stable Diffusion, Comfy, Prompts for Text AI.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 d-flex">
+                                        <div class="card shadow-sm flex-fill">
+                                            <div class="card-header bg-warning text-dark"><i class="fas fa-user"></i>
+                                                Personal</div>
+                                            <div class="card-body">
+                                                <p>Crypto developer in Solidity, Crypto user in the list you found
+                                                    below, Linux user (Kubuntu). </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="row">
@@ -545,22 +625,22 @@
                                     <div class="text-center transition-animation">
                                         <h5 class="title">Art is for everyone! No exceptions! Respect people's
                                             differences!</h5>
-                                        Your talent doesn't make you superior to anyone, no "make art great again". Let
-                                        people support what their heart believes they want to help. By
-                                        supporting AI Artists, prioritize indie and open source drawings with prompts
-                                        and/or model credits because sometimes these models are crediting artists too.
-                                        Help people who really take care about AI Art, and not big corporations.
-                                        <br /><br />
+                                        Your talent doesn't make you superior. Support art with your heart, without
+                                        excluding anyone.
+                                        If you value AI Art, prioritize indie and open-source works, giving credit to
+                                        models and artists involved.
+                                        Focus on those who truly care about AI Art, not big corporations.
+                                        <br />
                                         Don't attack peoples you don't know about their artistic life just feed your
                                         ego. Say no to the hate speech.
-                                        <br />
-                                        <small>(11/06/2024) (mm/dd/yyyy)</small>
                                         <br />
                                         <a class="btn btn-sm mt-2 btn-dark" data-bs-toggle="collapse"
                                             href="#anti-ai-motivational-message" role="button" aria-expanded="false"
                                             aria-controls="anti-ai-motivational-message">
                                             Motivational message for cyberbully victims
                                         </a>
+                                        <br />
+                                        <small>(11/06/2024) (mm/dd/yyyy)</small>
 
                                         <div class="collapse" id="anti-ai-motivational-message">
                                             <div class="card card-body mt-2">
@@ -579,12 +659,11 @@
                                     <hr class="my-4 border-secondary-subtle">
                                     <div class="text-center transition-animation">
                                         <h5 class="title">Autistic?</h5>
-                                        Yes, I am <strong>DIAGNOSED</strong> autistic. I have a psychologist or/and
-                                        psychiatrist to help with treatment. (There is no cure)
-                                        Don't try to compare me to the other "autistic" people on the internet who
-                                        just say they're autistic. And if you like to identify yourself as an autist
-                                        for
-                                        fun, know that this is offensive.
+                                        Yes, I am <strong>diagnosed</strong> with autism. I have a psychologist and/or psychiatrist who
+                                        helps with my treatment. (There is no cure.) Please avoid comparing me to others
+                                        online who simply claim to be autistic. If you identify as autistic for fun,
+                                        please understand that this can be hurtful and disrespectful.
+                                        <br />
                                         <img src="./img/card/Jaskitti22-30fps.png" class="img-fluid tiny-right-image"
                                             alt="Jaskitti22" />
                                         <br />
@@ -604,74 +683,81 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12">
-                                    <hr class="my-4 border-secondary-subtle">
-                                    <div class="text-center transition-animation">
-                                        <h5 class="title">Friend Request Rules</h5>
-                                        Only add me if you are sure I will accept you. I don't like accepting random
-                                        friend invites. Understand that I want to keep on my friends list only
-                                        people I
-                                        want to keep contact.
-                                    </div>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <button type="button" class="btn btn-primary w-100" data-bs-toggle="collapse" data-bs-target="#tiny-rules">Tiny Rules</button>
                                 </div>
 
-                                <div class="col-12">
-                                    <hr class="my-4 border-secondary-subtle">
-                                    <div class="text-center transition-animation">
-                                        <h5 class="title">Roleplay Rules</h5>
-                                        I only roleplay with people I know and enjoy conversation. I'm not in the
-                                        habit
-                                        of roleplaying 24/7, so understand when I try to shorten your random
-                                        roleplays.
-                                        Trying to add me just to roleplay won't be your best idea.
+                                <div class="collapse" id="tiny-rules">
+                                    <div class="col-12">
+                                        <hr class="my-4 border-secondary-subtle">
+                                        <div class="text-center transition-animation">
+                                            <h5 class="title">Friend Request Rules</h5>
+                                            Only add me if you are sure I will accept you. I don't like accepting random
+                                            friend invites. Understand that I want to keep on my friends list only
+                                            people I
+                                            want to keep contact.
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="col-12">
-                                    <hr class="my-4 border-secondary-subtle">
-                                    <div class="text-center transition-animation">
-                                        <h5 class="title">AI Rules</h5>
-                                        I don't mind you making AI content about my stuff as long as you let people
-                                        know
-                                        that the content has no connection to me and gives credits to my original
-                                        content.
-                                        <br />
-                                        <small>Message to all AI scammers: Don't waste your time making art
-                                            commission
-                                            scams in my DM. I know what you're trying to do.</small>
+                                    <div class="col-12">
+                                        <hr class="my-4 border-secondary-subtle">
+                                        <div class="text-center transition-animation">
+                                            <h5 class="title">Roleplay Rules</h5>
+                                            I only roleplay with people I know and enjoy conversation. I'm not in the
+                                            habit
+                                            of roleplaying 24/7, so understand when I try to shorten your random
+                                            roleplays.
+                                            Trying to add me just to roleplay won't be your best idea.
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="col-12">
-                                    <hr class="my-4 border-secondary-subtle">
-                                    <div class="text-center transition-animation">
-                                        <h5 class="title">Crypto Rules</h5>
-                                        Don't disturb me, sending random Airdrops and NFTs. I don't like it, and no
-                                        one
-                                        else will like it. My web3 wallet is grateful.
-                                        Keep me completely away from memecoin alternatives. I only accept dogecoin.
-                                        No,
-                                        I won't try to trust your memecoin.
-                                        <img src="./img/card/YCH002.png" class="img-fluid tiny-left-image"
-                                            alt="YCH002" />
-                                        <br />
-                                        <small>Message to all crypto scammers: I will report all your NFTs and
-                                            Tokens
-                                            you try to send to me. I have contact with anti crypto scammer
-                                            communities.</small>
+                                    <div class="col-12">
+                                        <hr class="my-4 border-secondary-subtle">
+                                        <div class="text-center transition-animation">
+                                            <h5 class="title">AI Rules</h5>
+                                            I don't mind you making AI content about my stuff as long as you let people
+                                            know
+                                            that the content has no connection to me and gives credits to my original
+                                            content.
+                                            <br />
+                                            <small>Message to all AI scammers: Don't waste your time making art
+                                                commission
+                                                scams in my DM. I know what you're trying to do.</small>
+                                        </div>
+                                    </div>
 
-                                        <br /><br />
-                                        Don't keep inviting me into your investments or I will block you. (It
-                                        doesn't
-                                        matter if it's true or a scammer) I know how to take care of myself in
-                                        crypto.
+                                    <div class="col-12">
+                                        <hr class="my-4 border-secondary-subtle">
+                                        <div class="text-center transition-animation">
+                                            <h5 class="title">Crypto Rules</h5>
+                                            Don't disturb me, sending random Airdrops and NFTs. I don't like it, and no
+                                            one
+                                            else will like it. My web3 wallet is grateful.
+                                            Keep me completely away from memecoin alternatives. I only accept dogecoin.
+                                            No,
+                                            I won't try to trust your memecoin.
+                                            <img src="./img/card/YCH002.png" class="img-fluid tiny-left-image"
+                                                alt="YCH002" />
+                                            <br />
+                                            <small>Message to all crypto scammers: I will report all your NFTs and
+                                                Tokens
+                                                you try to send to me. I have contact with anti crypto scammer
+                                                communities.</small>
+
+                                            <br /><br />
+                                            Don't keep inviting me into your investments or I will block you. (It
+                                            doesn't
+                                            matter if it's true or a scammer) I know how to take care of myself in
+                                            crypto.
+                                        </div>
                                     </div>
 
                                     <div class="col-12">
                                         <hr class="my-4 border-secondary-subtle">
                                         <div class="text-center transition-animation">
                                             <h5 class="title">Social Rules</h5>
-                                            Being anti-AI or anti-crypto won't interfere on our friendship at all, as
+                                            Being anti-AI or anti-crypto won't interfere on our friendship at all,
+                                            as
                                             long
                                             as you don't try to extreme it to the point where I feel threatened.
                                             You can talk to me normally without fear of me trying to do something to
@@ -697,9 +783,11 @@
                                         <hr class="my-4 border-secondary-subtle">
                                         <div class="text-center transition-animation">
                                             <h5 class="title">Who I normally block</h5>
-                                            Any kind of extremist, no matter if it's right, left, anti-tech. If you're
+                                            Any kind of extremist, no matter if it's right, left, anti-tech. If
+                                            you're
                                             an extremist, it's a block.
-                                            Accounts that seem to be scam will be blocked too. Accounts that follow me
+                                            Accounts that seem to be scam will be blocked too. Accounts that follow
+                                            me
                                             only to try to
                                             promote crypto without permission is ban.
                                         </div>
@@ -709,93 +797,100 @@
                                         <hr class="my-4 border-secondary-subtle">
                                         <div class="text-center transition-animation">
                                             <h5 class="title">I was blocked by you. What do I do?</h5>
-                                            You can try talking to me on other places on the internet, or ask a friend
+                                            You can try talking to me on other places on the internet, or ask a
+                                            friend
                                             of yours to talk to me.
-                                            If you try to email me, I will need some way to identify you. The easiest
-                                            way is to have an account at the Puddy Club where your Google account is the
+                                            If you try to email me, I will need some way to identify you. The
+                                            easiest
+                                            way is to have an account at the Puddy Club where your Google account is
+                                            the
                                             same as being used to send your email.
                                             <br /><br />
-                                            Please, try talking to me directly. If you make involvement of people from
+                                            Please, try talking to me directly. If you make involvement of people
+                                            from
                                             my contact list, or
                                             other unknown people, will just make your situation worse.
                                             <br /><br />
-                                            Don't try to justify your misconduct interpreted by me. Just try to convince
+                                            Don't try to justify your misconduct interpreted by me. Just try to
+                                            convince
                                             me that I need to remove your block.
-                                            Trying to justify hate behavior against any kind of group of innocent people
+                                            Trying to justify hate behavior against any kind of group of innocent
+                                            people
                                             I will just ignore or put you on another blacklist.
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <hr class="my-4 border-secondary-subtle">
-                                        <div class="text-center transition-animation w-100">
-                                            Images Credits
-                                            <center class="small">Calena, ace.play, mishiasharinacarrier, BlackRole
-                                                Studio, TomatoPony, MisterAibo, interaminense, Springfield - luis
-                                            </center>
                                         </div>
                                     </div>
                                 </div>
 
+                                <div class="col-12">
+                                    <hr class="my-4 border-secondary-subtle">
+                                    <div class="text-center transition-animation w-100">
+                                        Images Credits
+                                        <center class="small">Calena, ace.play, mishiasharinacarrier, BlackRole
+                                            Studio, TomatoPony, MisterAibo, interaminense, Springfield - luis
+                                        </center>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
+
                     </div>
                 </div>
-
             </div>
+
         </div>
+    </div>
 
-        <script src="./js/age.js"></script>
-        <script type="text/javascript" src="./js/rainbow.js"></script>
+    <script src="./js/age.js"></script>
+    <script type="text/javascript" src="./js/rainbow.js"></script>
 
-        <script type="text/javascript" src="https://browser.pony.house/js/ponybase.js"></script>
-        <script type="text/javascript" src="https://browser.pony.house/js/browserponies.js"
-            id="browser-ponies-script"></script>
+    <script type="text/javascript" src="https://browser.pony.house/js/ponybase.js"></script>
+    <script type="text/javascript" src="https://browser.pony.house/js/browserponies.js"
+        id="browser-ponies-script"></script>
 
-        <script type="text/javascript">
-            document.addEventListener("DOMContentLoaded", function () {
-                if (typeof window.ethereum !== "undefined") {
-                    document.body.classList.add("web3-mode");
-                }
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            if (typeof window.ethereum !== "undefined") {
+                document.body.classList.add("web3-mode");
+            }
+        });
+        const month = timeNow.month();
+        if (month >= 10)
+            snowStorm.resume();
+        else snowStorm.stop();
+
+        const spawnPonies = { "sphinx": 1 };
+        if (hour >= 19 || hour <= 4) {
+            spawnPonies['flutterbat'] = 1;
+        } else {
+            spawnPonies['fluttershy'] = 1;
+        }
+
+        setTimeMode();
+
+        if (document.body) document.body.classList.remove('loading-page');
+        if (!window.mobileAndTabletCheck()) {
+            (function (cfg) {
+                BrowserPonies.setBaseUrl(cfg.baseurl);
+                BrowserPonies.loadConfig(BrowserPoniesBaseConfig);
+                BrowserPonies.loadConfig(cfg);
+            })({
+                baseurl: "https://browser.pony.house/",
+                fadeDuration: 500,
+                volume: 1,
+                fps: 60,
+                speed: 3,
+                audioEnabled: false,
+                showFps: false,
+                showLoadProgress: true,
+                speakProbability: 0.1,
+                spawn: spawnPonies,
+                autostart: true
             });
-            const month = timeNow.month();
-            if (month >= 10)
-                snowStorm.resume();
-            else snowStorm.stop();
+        }
+    </script>
 
-            const spawnPonies = { "sphinx": 1 };
-            if (hour >= 19 || hour <= 4) {
-                spawnPonies['flutterbat'] = 1;
-            } else {
-                spawnPonies['fluttershy'] = 1;
-            }
-
-            setTimeMode();
-
-            if (document.body) document.body.classList.remove('loading-page');
-            if (!window.mobileAndTabletCheck()) {
-                (function (cfg) {
-                    BrowserPonies.setBaseUrl(cfg.baseurl);
-                    BrowserPonies.loadConfig(BrowserPoniesBaseConfig);
-                    BrowserPonies.loadConfig(cfg);
-                })({
-                    baseurl: "https://browser.pony.house/",
-                    fadeDuration: 500,
-                    volume: 1,
-                    fps: 60,
-                    speed: 3,
-                    audioEnabled: false,
-                    showFps: false,
-                    showLoadProgress: true,
-                    speakProbability: 0.1,
-                    spawn: spawnPonies,
-                    autostart: true
-                });
-            }
-        </script>
-
-        <script type="text/javascript" src="./js/night.js"></script>
+    <script type="text/javascript" src="./js/night.js"></script>
 
 </body>
 
