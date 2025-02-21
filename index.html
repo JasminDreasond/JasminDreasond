@@ -21,6 +21,7 @@
 
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/night.css" />
+    <link rel="stylesheet" href="https://browser.pony.house/css/bootstrap_pc.css" />
 
     <script id="start-script">
         const rainbowTextStart = () => {
@@ -884,6 +885,7 @@
                 BrowserPonies.setBaseUrl(cfg.baseurl);
                 BrowserPonies.loadConfig(BrowserPoniesBaseConfig);
                 BrowserPonies.loadConfig(cfg);
+                BrowserPonies.api.getDemoGamepad(0, true);
             })({
                 baseurl: "https://browser.pony.house/",
                 fadeDuration: 500,
