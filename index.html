@@ -885,7 +885,13 @@
                 BrowserPonies.setBaseUrl(cfg.baseurl);
                 BrowserPonies.loadConfig(BrowserPoniesBaseConfig);
                 BrowserPonies.loadConfig(cfg);
-                BrowserPonies.api.getDemoGamepad(0, true);
+                let isFirstTime = true;
+                BrowserPonies.Util.onload(() => {
+                    if(isFirstTime) {
+                        isFirstTime = false;
+                        BrowserPonies.api.getDemoGamepad(0, true);
+                    }
+                });
             })({
                 baseurl: "https://browser.pony.house/",
                 fadeDuration: 500,
