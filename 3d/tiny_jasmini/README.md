@@ -1,6 +1,6 @@
 # Tiny Jasmini 3D Model
 
-This is the official version of my 3D model and you can freely download it. The blender version and the Source Filmmaker version are included.
+This is the official version of my 3D model and you can freely download it. The Blender version and the Source Filmmaker version are included.
 
 - If possible, a link to the original model or creator is appreciated.
 
