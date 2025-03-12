@@ -2,6 +2,8 @@
 
 This is the official version of my 3D model and you can freely download it. The Blender version and the Source Filmmaker version are included.
 
+Download the entire repository: https://github.com/JasminDreasond/JasminDreasond/archive/refs/heads/main.zip
+
 - If possible, a link to the original model or creator is appreciated.
 
 ## ⚠ **Exceptions & Special Permissions**
