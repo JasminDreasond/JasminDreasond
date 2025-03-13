@@ -25,7 +25,7 @@ The **Tiny Jasmini** 3D model is available for free use under the following cond
 - You are allowed to modify the model, as long as you respect this policy.
 
 ### ❌ **Restrictions**
-- **Reselling or redistributing** the model in any form (including modified versions) is **strictly prohibited**.
+- **Reselling** the model in any form (including modified versions) is **strictly prohibited**.
 - The model **must remain free for everyone**—you cannot put it behind a paywall or restrict access.
 - You cannot claim the model as your own creation.
 - The model must not be used in illegal, harmful, or offensive content.
