@@ -7,6 +7,7 @@ body {
 body {
   transition: opacity 0.7s, background-color 0.7s;
   transition-timing-function: ease;
+  will-change: opacity, background-color;
 }
 
 body.loading-page {
@@ -72,10 +73,12 @@ body:not(.web3-mode) .web3-item {
 .transition-animation h5.title {
   transition: scale 0.4s, font-size 0.4s;
   transition-timing-function: ease;
+  will-change: transform, font-size;
 }
 
 img.transition-animation:hover {
   scale: 1.03;
+  will-change: transform;
 }
 
 .transition-animation .username-title:hover {
@@ -100,6 +103,7 @@ img.transition-animation:hover {
   transition-timing-function: ease;
   cursor: pointer;
   image-rendering: pixelated;
+  will-change: transform;
 }
 
 #browser-ponies img:hover {
