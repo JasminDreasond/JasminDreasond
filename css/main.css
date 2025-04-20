@@ -134,3 +134,7 @@ img.transition-animation:hover {
     display: none !important;
   }
 }
+
+.cloud {
+  will-change: transform;
+}
