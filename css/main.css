@@ -135,6 +135,7 @@ img.transition-animation:hover {
   }
 }
 
-.cloud {
+.container-sky .cloud,
+.container-sky [id^="cloud-"] {
   will-change: transform;
 }
