@@ -49,6 +49,7 @@
   animation-name: star;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  will-change: box-shadow;
 }
 
 [data-bs-theme="dark"] .container-sky .star.style1 {
@@ -101,6 +102,7 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-duration: 1s;
+  will-change: top, right, opacity;
 }
 
 [data-bs-theme="dark"] .container-sky .meteor:before {
@@ -145,6 +147,7 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-duration: 10s;
+  will-change: box-shadow;
 }
 
 [data-bs-theme="dark"] .container-sky .moon .texture {
