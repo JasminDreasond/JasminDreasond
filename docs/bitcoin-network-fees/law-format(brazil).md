@@ -28,6 +28,8 @@ II – **Pools de Mineração Privada**: são todas as demais estruturas de mine
 2. **Taxas de Transação (transaction fees)** – pagas voluntariamente pelos usuários para priorização de suas transações.  
 Cada **bloco** contém um conjunto de transações confirmadas e uma referência criptográfica ao bloco anterior, formando assim uma cadeia contínua (blockchain) que garante a **imutabilidade, transparência e segurança da rede**.
 
+**VI – Rig de Criptomoedas:** é um equipamento físico dedicado à atividade de mineração de ativos digitais, composto por uma ou mais unidades de processamento (geralmente GPUs – unidades de processamento gráfico, ASICs – circuitos integrados de aplicação específica, ou FPGAs – arrays programáveis). Essas máquinas são projetadas para executar operações criptográficas de alta intensidade, exigidas pela resolução dos algoritmos que validam blocos em uma rede blockchain. As rigs podem ser montadas de forma caseira ou industrial, funcionando de forma autônoma ou integrada a pools de mineração. Para os efeitos desta Lei, considera-se Rig de Criptomoedas todo **conjunto computacional com arquitetura voltada para mineração contínua de ativos digitais**, seja localizado fisicamente no território nacional ou operado remotamente por meio de contratos de mineração de criptomoedas em nuvem (Cloud Mining).
+
 ---
 
 #### **CAPÍTULO II — DAS ESTRUTURAS MUNICIPAIS DE MINERAÇÃO**
@@ -96,7 +98,7 @@ III – Mecanismos de auditoria, transparência e verificação de participaçã
 **Art. 13º**  
 Ficam isentos de qualquer forma de tributação federal, estadual ou municipal os equipamentos destinados exclusivamente à atividade de mineração de Bitcoin, incluindo, mas não se limitando a:
 
-I – RIGs de mineração baseadas em GPUs ou ASICs;  
+I – RIGs de mineração de criptomoedas baseadas em GPUs ou ASICs;  
 II – Fontes de alimentação e sistemas de refrigeração dedicados;  
 III – Componentes e peças de reposição diretamente vinculadas ao funcionamento contínuo dos equipamentos de mineração;  
 IV – Softwares, licenças e dispositivos de monitoramento adquiridos com finalidade exclusiva de operação, manutenção ou auditoria de mineração de Bitcoin.
@@ -118,7 +120,7 @@ Toda energia elétrica consumida por equipamentos de mineração de Bitcoin **vi
 I – Imposto sobre Circulação de Mercadorias e Serviços (ICMS);  
 II – Contribuições de intervenção no domínio econômico (CIDE);  
 III – Encargos setoriais de bandeiras tarifárias;  
-IV – Taxas de iluminação pública vinculadas ao consumo de energia por RIGs;  
+IV – Taxas de iluminação pública vinculadas ao consumo de energia por RIGs de mineração de criptomoedas;  
 V – Qualquer outro tributo ou sobretaxa associada ao uso de mineração pública.
 
 §3º – A isenção também abrange eventuais taxas de ligação, religação, aumento de carga e modernização de rede quando justificadas pela instalação ou ampliação de infraestrutura pública de mineração.
