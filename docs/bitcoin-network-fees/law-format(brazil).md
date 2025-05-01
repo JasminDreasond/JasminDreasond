@@ -70,9 +70,9 @@ III – Participar de pools de mineração privada nacionais ou estrangeiras.
 
 #### **CAPÍTULO V — DA EDUCAÇÃO, INCENTIVOS E TRANSPARÊNCIA**
 
-**Art. 9º** A União e os municípios poderão oferecer programas educacionais e técnicos sobre mineração, uso eficiente de energia e segurança digital.
+**Art. 9º** A União e os municípios poderão oferecer programas educacionais e técnicos sobre mineração de criptomoedas, uso eficiente de energia e segurança digital.
 
-**Art. 10º** Poderão ser distribuídos kits de mineração de baixo custo, softwares públicos ou infraestrutura comunitária para inclusão tecnológica e participação ampla.
+**Art. 10º** Poderão ser distribuídos kits de mineração de criptomoedas de baixo custo, softwares públicos ou infraestrutura comunitária para inclusão tecnológica e participação ampla.
 
 **Art. 11º** A gestão dos pools de mineração públicos deverá manter sistemas de monitoramento aberto com estatísticas públicas por região, garantindo transparência total sobre o uso de energia e a receita gerada.
 
