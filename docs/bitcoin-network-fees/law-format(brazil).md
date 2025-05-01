@@ -52,8 +52,8 @@ III – Optar por benefícios correlatos, como créditos fiscais, descontos em s
 §1º O cidadão poderá, livremente, escolher:
 
 I – Minerar por conta própria, individualmente ou em pequenos grupos;  
-II – Participar de pools de mineração públicas municipais;  
-III – Participar de pools de mineração privadas nacionais ou estrangeiras.
+II – Participar de pools de mineração pública;  
+III – Participar de pools de mineração privada nacionais ou estrangeiras.
 
 §2º É vedado ao poder público impor qualquer forma de monopólio, exclusividade ou limitação coercitiva quanto à forma de mineração ou à escolha de pools de mineração.
 
@@ -100,9 +100,9 @@ IV – Softwares, licenças e dispositivos de monitoramento adquiridos com final
 
 
 **Art. 14º**  
-Toda energia elétrica consumida por equipamentos de mineração de Bitcoin **vinculados a pools de mineração públicas de mineração** será **isentada integralmente de impostos, tarifas adicionais, encargos setoriais ou qualquer tipo de tributo federal, estadual ou municipal**.
+Toda energia elétrica consumida por equipamentos de mineração de Bitcoin **vinculados a pools de mineração pública** será **isentada integralmente de impostos, tarifas adicionais, encargos setoriais ou qualquer tipo de tributo federal, estadual ou municipal**.
 
-§1º – A isenção aplica-se exclusivamente às unidades consumidoras devidamente registradas como participantes das pools de mineração públicas, devendo a comprovação ser feita por meio de certificação emitida pela administração do pool de mineração público local.
+§1º – A isenção aplica-se exclusivamente às unidades consumidoras devidamente registradas como participantes das pools de mineração pública, devendo a comprovação ser feita por meio de certificação emitida pela administração do pool de mineração público local.
 
 §2º – Estão incluídos nesta isenção:
 
@@ -115,7 +115,7 @@ V – Qualquer outro tributo ou sobretaxa associada ao uso de mineração públi
 §3º – A isenção também abrange eventuais taxas de ligação, religação, aumento de carga e modernização de rede quando justificadas pela instalação ou ampliação de infraestrutura pública de mineração.
 
 **Art. 15º**  
-A participação em pools de mineração públicas de mineração poderá ser realizada tanto por meio de equipamentos físicos próprios quanto por **serviços de mineração em nuvem (cloud mining)**, desde que:
+A participação em pools de mineração pública poderá ser realizada tanto por meio de equipamentos físicos próprios quanto por **serviços de mineração em nuvem (cloud mining)**, desde que:
 
 I – A identidade do contribuinte esteja vinculada ao pool de mineração público correspondente por meio de contrato digital ou identificação oficial emitida pela administração da pool de mineração público;
 
@@ -125,7 +125,7 @@ III – A contribuição em hash power esteja plenamente rastreável na blockcha
 
 IV – A energia elétrica utilizada na operação remota não esteja sendo subsidiada de forma ilícita ou com finalidade diversa da mineração pública.
 
-§1º – Cidadãos que participarem por meio de mineração em nuvem em pools de mineração públicas **terão os mesmos direitos de isenção e reconhecimento cívico** estabelecidos nesta Lei, incluindo elegibilidade para incentivos locais.
+§1º – Cidadãos que participarem por meio de mineração em nuvem em pools de mineração pública **terão os mesmos direitos de isenção e reconhecimento cívico** estabelecidos nesta Lei, incluindo elegibilidade para incentivos locais.
 
 §2º – Os municípios poderão firmar convênios com empresas de mineração em nuvem para facilitar o acesso dos cidadãos a planos cooperativos ou subsidiados de participação, como forma de inclusão digital e energética.
 
