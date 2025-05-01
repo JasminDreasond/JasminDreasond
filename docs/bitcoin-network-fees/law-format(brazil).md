@@ -59,14 +59,12 @@ III – Participar de pools privadas nacionais ou estrangeiras.
 
 **Art. 10º** A gestão dos pools públicos deverá manter sistemas de monitoramento aberto com estatísticas públicas por região, garantindo transparência total sobre o uso de energia e a receita gerada.
 
+**Art. 11º** A atividade de mineração de Bitcoin, quando realizada em colaboração com os pools públicos governamentais, será reconhecida como uma **forma de contribuição cívica ao fortalecimento da infraestrutura digital nacional e à segurança da rede global**.
+
 ---
 
 #### **CAPÍTULO VI — DAS DISPOSIÇÕES FINAIS**
 
-**Art. 11º** O Governo Federal, por meio de órgão competente, publicará regulamentações complementares para a execução desta Lei, em até 180 dias após sua promulgação.
+**Art. 12º** O Governo Federal, por meio de órgão competente, publicará regulamentações complementares para a execução desta Lei, em até 180 dias após sua promulgação.
 
-**Art. 12º** Esta Lei entra em vigor na data de sua publicação.
-
----
-
-Se quiser, posso transformar isso em um PDF formatado como um projeto de lei oficial com brasão, sumário e cabeçalho jurídico. Deseja?
+**Art. 13º** Esta Lei entra em vigor na data de sua publicação.
