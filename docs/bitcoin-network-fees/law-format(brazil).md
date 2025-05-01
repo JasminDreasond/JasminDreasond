@@ -19,6 +19,15 @@ I – **Pools de Mineração Pública**: são as infraestruturas de mineração 
 
 II – **Pools de Mineração Privada**: são todas as demais estruturas de mineração de Bitcoin não vinculadas à administração pública, sejam nacionais ou estrangeiras, operadas por empresas, grupos independentes ou indivíduos do setor privado, com fins comerciais ou colaborativos, sem regulação direta do Estado.
 
+**III – Core de Criptomoedas:** refere-se ao **conjunto central de software e protocolos** da blockchain que define, valida e mantém o funcionamento de uma criptomoeda específica, sendo responsável pelas **regras de consenso**, estrutura de blocos, emissão de ativo virtuais, verificação de transações e operação da rede descentralizada. No caso do Bitcoin, o core é representado por implementações como o **Bitcoin Core**. Para os efeitos desta Lei, considera-se **core de criptomoedas** qualquer software reconhecido como referência principal na operação e validação da rede blockchain correspondente, desde que de **código aberto, auditável e em conformidade com os padrões internacionais de segurança e descentralização**.
+
+**IV – Mineração de criptomoedas em Nuvem (Cloud Mining):** é a prática de mineração de criptomoedas realizada de forma remota, mediante a contratação de poder computacional disponibilizado por terceiros através da internet, dispensando a posse dos cores de criptomoedas por parte do contratante.
+
+**V – Mineração de criptomoeda:** é o processo computacional descentralizado pelo qual transações na rede blockchain são verificadas, agrupadas em blocos e registradas de forma permanente na blockchain (livro-razão público digital). A mineração envolve a resolução de desafios criptográficos complexos, com o objetivo de validar um novo bloco. O minerador (ou pool de mineração) que encontrar a solução válida para o bloco recebe uma recompensa em ativos digitais fornecidos pela rede, composta por:  
+1. **Recompensa de Bloco (block reward)** – uma emissão controlada de novas criptomoedas, e  
+2. **Taxas de Transação (transaction fees)** – pagas voluntariamente pelos usuários para priorização de suas transações.  
+Cada **bloco** contém um conjunto de transações confirmadas e uma referência criptográfica ao bloco anterior, formando assim uma cadeia contínua (blockchain) que garante a **imutabilidade, transparência e segurança da rede**.
+
 ---
 
 #### **CAPÍTULO II — DAS ESTRUTURAS MUNICIPAIS DE MINERAÇÃO**
@@ -115,7 +124,7 @@ V – Qualquer outro tributo ou sobretaxa associada ao uso de mineração públi
 §3º – A isenção também abrange eventuais taxas de ligação, religação, aumento de carga e modernização de rede quando justificadas pela instalação ou ampliação de infraestrutura pública de mineração.
 
 **Art. 15º**  
-A participação em pools de mineração pública poderá ser realizada tanto por meio de equipamentos físicos próprios quanto por **serviços de mineração em nuvem (cloud mining)**, desde que:
+A participação em pools de mineração pública poderá ser realizada tanto por meio de equipamentos físicos próprios quanto por **serviços de mineração de criptomoedas em nuvem (cloud mining)**, desde que:
 
 I – A identidade do contribuinte esteja vinculada ao pool de mineração público correspondente por meio de contrato digital ou identificação oficial emitida pela administração da pool de mineração público;
 
