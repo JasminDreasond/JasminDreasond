@@ -121,7 +121,7 @@ I – Imposto sobre Circulação de Mercadorias e Serviços (ICMS);
 II – Contribuições de intervenção no domínio econômico (CIDE);  
 III – Encargos setoriais de bandeiras tarifárias;  
 IV – Taxas de iluminação pública vinculadas ao consumo de energia por RIGs de mineração de criptomoedas;  
-V – Qualquer outro tributo ou sobretaxa associada ao uso de mineração pública.
+V – Qualquer outro tributo ou sobretaxa associada ao uso de pools de mineração pública.
 
 §3º – A isenção também abrange eventuais taxas de ligação, religação, aumento de carga e modernização de rede quando justificadas pela instalação ou ampliação de infraestrutura pública de mineração.
 
