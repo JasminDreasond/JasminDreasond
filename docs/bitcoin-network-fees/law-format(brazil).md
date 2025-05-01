@@ -1,5 +1,5 @@
 ### **LEI Nº XXXX/2025**  
-**Institui o modelo de financiamento público descentralizado através da mineração de Bitcoin, como alternativa à tributação tradicional, e dispõe sobre a criação de estruturas municipais de mineração, pools públicas colaborativas e a liberdade individual de mineração.**
+**Institui o modelo de financiamento público descentralizado através da mineração de Bitcoin, como alternativa à tributação tradicional, e dispõe sobre a criação de estruturas municipais de mineração, pools públicas de mineração colaborativas e a liberdade individual de mineração.**
 
 **O Congresso Nacional decreta:**
 
