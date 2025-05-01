@@ -59,7 +59,22 @@ III – Participar de pools privadas nacionais ou estrangeiras.
 
 **Art. 10º** A gestão dos pools públicos deverá manter sistemas de monitoramento aberto com estatísticas públicas por região, garantindo transparência total sobre o uso de energia e a receita gerada.
 
-**Art. 11º** A atividade de mineração de Bitcoin, quando realizada em colaboração com os pools públicos governamentais, será reconhecida como uma **forma de contribuição cívica ao fortalecimento da infraestrutura digital nacional e à segurança da rede global**.
+**Art. 11º**  
+A atividade de mineração de Bitcoin será reconhecida como uma **forma legítima de contribuição cívica ao fortalecimento da infraestrutura digital nacional e à segurança da rede global**, desde que realizada com participação efetiva nos pools de mineração administrados por entes públicos governamentais.
+
+§1º – Para que o minerador — pessoa física, jurídica, cooperativa ou instituição — tenha acesso a benefícios, incentivos ou reconhecimento previstos nesta Lei, será exigida uma **contribuição mínima de hash rate ou equivalente energético ou financeiro**, conforme regulamentação estabelecida **por cada município**, de acordo com sua realidade local, capacidade energética e metas de arrecadação.
+
+§2º – Cada município deverá definir, por meio de decreto ou legislação complementar, os **parâmetros mínimos de contribuição**, podendo incluir:
+
+I – Percentual mínimo de hash rate direcionado mensalmente aos pools públicos municipais;  
+II – Alternativas de contribuição em forma de doação energética, monetária ou infraestrutura;  
+III – Mecanismos de auditoria, transparência e verificação de participação.
+
+§3º – A ausência de qualquer forma de contribuição pública, conforme definido pelo município de jurisdição do minerador, caracterizará a atividade como **estritamente privada**, sem direito a benefícios, incentivos ou reconhecimento cívico por parte do Estado.
+
+§4º – A liberdade de mineração permanece plenamente garantida em território nacional. Entretanto, a **classificação da operação como contributiva, neutra ou privada** será determinada com base no grau de engajamento com a infraestrutura pública local.
+
+§5º – O poder público municipal **terá a prerrogativa de permitir, suspender ou impedir o acesso de mineradores aos pools públicos sob sua gestão**, caso estes não atendam aos critérios mínimos de contribuição, transparência ou conformidade técnica definidos pela legislação local.
 
 ---
 
