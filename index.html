@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/night.css" />
     <link rel="stylesheet" href="https://browser.pony.house/css/bootstrap_pc.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tiny-essentials@1.22.13/dist/v1/css/aiMarker.min.css"
+        integrity="sha384-5SyC0bX8ctGyATEeZaRVTo/7VbH0ArITD0dqeiKmxJ7U8J5W/fKnqzZA3Bpxteed" crossorigin="anonymous">
 
     <script id="start-script">
         const rainbowTextStart = () => {
@@ -98,6 +100,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data.min.js"
         integrity="sha512-t/mY3un180WRfsSkWy4Yi0tAxEDGcY2rAEx873hb5BrkvLA0QLk54+SjfYgFBBoCdJDV1H86M8uyZdJhAOHeyA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/tiny-essentials@1.22.13/dist/v1/TinyBasicsEs.min.js"
+        integrity="sha384-0U6M25NKO9nJbdjh7+qKgtq65yW/SxtWqV6t+Q4C4IG0q3iCmjeCyZpbjJ+kTCwC"
+        crossorigin="anonymous"></script>
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -108,6 +113,7 @@
     <meta name="theme-color" content="#a21632">
 
     <script type="text/javascript">
+        TinyBasicsEs.addAiMarkerShortcut();
         const timeNow = moment();
         const hour = timeNow.hour();
         const setTimeMode = () => {
@@ -398,14 +404,16 @@
                                                     rel="me" href="https://steamcommunity.com/id/JasminDreasond"><i
                                                         class="fa-brands fa-steam" style="color: #66c0f4;"></i> Steam
                                                     (Games)</a></li>
-                                            <li class="list-group-item web3-item"><a target="_blank" class="text-decoration-none"
-                                                    rel="me" href="https://rarible.com/JasminDreasond"><i class="fa-solid fa-registered"
-                                                        style="color: #FEDA03;"></i>
+                                            <li class="list-group-item web3-item"><a target="_blank"
+                                                    class="text-decoration-none" rel="me"
+                                                    href="https://rarible.com/JasminDreasond"><i
+                                                        class="fa-solid fa-registered" style="color: #FEDA03;"></i>
                                                     Rarible
                                                     (NFT)</a></li>
-                                            <li class="list-group-item web3-item"><a target="_blank" class="text-decoration-none"
-                                                    rel="me" href="https://opensea.io/JasminDreasond"><i class="fa-solid fa-sailboat"
-                                                        style="color: #4375ff;"></i>
+                                            <li class="list-group-item web3-item"><a target="_blank"
+                                                    class="text-decoration-none" rel="me"
+                                                    href="https://opensea.io/JasminDreasond"><i
+                                                        class="fa-solid fa-sailboat" style="color: #4375ff;"></i>
                                                     Opensea
                                                     (NFT)</a></li>
                                         </ul>
@@ -634,14 +642,18 @@
                                 <div class="col-12">
                                     <hr class="my-4 border-secondary-subtle">
                                     <div class="text-center transition-animation">
-                                        <h5 class=""title>My content</h5>
-                                        <p>
-                                            Whenever any of my content involves AI in some way, I always make sure to mention it in the credits. 
-                                            I want everyone to know exactly how the work was made, because I care a lot about transparency.
+                                        <h5 class="title">My content</h5>
+                                        <p class="made-by-ai">
+                                            Whenever any of my content involves AI in some way, I always make sure to
+                                            mention it in the credits.
+                                            I want everyone to know exactly how the work was made, because I care a lot
+                                            about transparency.
                                         </p>
-                                        <p>
-                                            AI is only used when it’s truly necessary, like for experiments or tools that help me speed up some processes, 
-                                            but I never replace the core work with it. Everything important that requires real skill and creativity is done by me, personally.
+                                        <p class="made-by-ai">
+                                            AI is only used when it’s truly necessary, like for experiments or tools
+                                            that help me speed up some processes,
+                                            but I never replace the core work with it. Everything important that
+                                            requires real skill and creativity is done by me, personally.
                                         </p>
                                     </div>
                                 </div>
@@ -650,28 +662,24 @@
                                     <hr class="my-4 border-secondary-subtle">
                                     <div class="text-center transition-animation">
                                         <h5 class="title">Autistic?</h5>
-                                        Yes, I am <strong>diagnosed</strong> with autism. I have a psychologist and/or
-                                        psychiatrist who
-                                        helps with my treatment. (There is no cure.) Please avoid comparing me to others
-                                        online who simply claim to be autistic. If you identify as autistic for fun,
-                                        please understand that this can be hurtful and disrespectful.
+                                        Yes, I am <strong>diagnosed</strong> with autism and I work with a psychologist
+                                        and/or psychiatrist to manage my treatment. (There is currently no cure.)
+                                        Please avoid comparing me to others online who simply claim to be autistic. If
+                                        you identify as autistic for fun, understand that this can be hurtful and
+                                        disrespectful.
                                         <br />
                                         <img src="./img/card/Jaskitti22-30fps.png" class="img-fluid tiny-right-image"
                                             alt="Jaskitti22" />
                                         <br />
-                                        I have Asperger's syndrome, and the most common effects are sensitivity to
-                                        sound, I am usually quieter than normal, and I have more difficulty reading
-                                        people's emotions due to my brain having an interpretation more dedicated to
-                                        logic than emotion. (I will write/talk a lot more than usual) But I'm not a
-                                        weird person, I know how to be
-                                        friendly, the tip is simple: avoid debates about anything with me so you
-                                        don't
-                                        get affected by the stronger effects of my autism. As much as I'm aware of
-                                        my
-                                        personality, it doesn't mean I'll be able to control it completely. I can
-                                        just
-                                        try to make this personality of mine more friendly in the way possible for
-                                        me.
+                                        I have Asperger's syndrome. Some common effects include sensitivity to sound,
+                                        being quieter than usual, and having more difficulty reading people's emotions
+                                        because my brain interprets situations more logically than emotionally.
+                                        I may write or talk more than typical, but this doesn't make me "weird." I know
+                                        how to be friendly.
+                                        A simple tip: avoid debating with me on sensitive topics, as it can trigger
+                                        stronger effects of my autism.
+                                        While I am aware of my personality, I may not fully control it, but I always try
+                                        to present it in the friendliest way possible.
                                     </div>
                                 </div>
 
@@ -688,7 +696,8 @@
                                                 differences!</h5>
                                             Your talent doesn't make you superior. Support art with your heart, without
                                             excluding anyone.
-                                            If you value AI Art, prioritize indie and open-source works, giving credit to
+                                            If you value AI Art, prioritize indie and open-source works, giving credit
+                                            to
                                             models and artists involved.
                                             Focus on those who truly care about AI Art, not big corporations.
                                             <br />
@@ -705,9 +714,11 @@
 
                                             <div class="collapse" id="anti-ai-motivational-message">
                                                 <div class="card card-body mt-2">
-                                                    Sometimes, the most challenging paths are those where our passions and
+                                                    Sometimes, the most challenging paths are those where our passions
+                                                    and
                                                     beliefs meet misunderstanding. When others oppose what we stand for,
-                                                    it's tempting to defend ourselves, to prove our worth or the value of
+                                                    it's tempting to defend ourselves, to prove our worth or the value
+                                                    of
                                                     what we believe. But peace comes when we realize that our purpose
                                                     doesn't need universal approval—it only needs our own clarity and
                                                     strength.
