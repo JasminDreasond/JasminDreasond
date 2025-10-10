@@ -1,4 +1,4 @@
-## Português
+## Português (Original)
 
 Eu atualmente estou um pouco melhor depois das minhas crises de pânico que eu tive nos últimos anos que me fez tomar várias atitudes que eu tenho arrependimentos hoje.
 
