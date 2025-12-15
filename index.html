@@ -22,16 +22,39 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/night.css" />
     <link rel="stylesheet" href="https://browser.pony.house/css/bootstrap_pc.css" />
-    <link rel="stylesheet" href="https://unpkg.com/tiny-essentials@1.22.13/dist/v1/css/aiMarker.min.css"
+    <link rel="stylesheet" href="https://unpkg.com/tiny-essentials@1.24.5/dist/v1/css/aiMarker.min.css"
         integrity="sha384-5SyC0bX8ctGyATEeZaRVTo/7VbH0ArITD0dqeiKmxJ7U8J5W/fKnqzZA3Bpxteed" crossorigin="anonymous">
 
+    <script src="https://unpkg.com/tiny-essentials@1.24.5/dist/v1/TinyBasicsEs.min.js"
+        integrity="sha384-6Nz3ZuoItdmhLsOYnpCVh3JEDCX9NzNh7gEni9txylyNuKFvrIZEWPS7IIHuTLGM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/tiny-essentials@1.24.5/dist/v1/TinyLocalStorage.min.js"
+        integrity="sha384-3JrfIlQJSSn0DiEkOCeOVZnpyojjVHGAGBkfGfDS77GsLrNBy9QGodatOeARQlEY"
+        crossorigin="anonymous"></script>
+
     <script id="start-script">
+        var tinyLs = new TinyLocalStorage();
         const rainbowTextStart = () => {
             let elements = document.getElementsByClassName("rainbowText");
             for (let i = 0; i < elements.length; i++) {
                 generateRainbowText(elements[i]);
             }
         };
+
+        const getCountry = async () => {
+            if (
+                location.hostname !== 'localhost' &&
+                location.hostname !== '127.0.0.1' &&
+                !tinyLs.getString('user-country')
+            ) {
+                const userCountry = await fetch('https://api.country.is/')
+                    .then((res) => res.json())
+                    .catch(console.error);
+                if (TinyBasicsEs.isJsonObject(userCountry)) tinyLs.setString('user-country', userCountry.country);
+            }
+        };
+
+        // getCountry();
 
         window.mobileCheck = function () {
             let check = false;
