@@ -23,17 +23,22 @@ export const initSkyCanvas = (canvas) => {
   /** @type {number} */
   let lastTime = 0;
 
-  /** @type {Array<{x: number, y: number, size: number, blinkSpeed: number, alpha: number}>} */
-  const stars = Array.from({ length: 400 }, () => ({
+  /**
+   * @returns {{x: number, y: number, size: number, blinkSpeed: number, alpha: number}}
+   */
+  const createStar = () => ({
     x: Math.random() * width,
     y: Math.random() * height,
     size: Math.random() * 2,
     blinkSpeed: 0.001 + Math.random() * 0.002,
     alpha: Math.random(),
-  }));
+  });
+
+  /** @type {Array<ReturnType<typeof createStar>>} */
+  let stars = Array.from({ length: 400 }, createStar);
 
   /** @type {Array<{x: number, y: number, speed: number, length: number}>} */
-  const meteors = [];
+  let meteors = [];
 
   /** @type {Array<{x: number, y: number, speed: number, scale: number, opacity: number}>} */
   const clouds = Array.from({ length: 12 }, () => ({
@@ -156,10 +161,25 @@ export const initSkyCanvas = (canvas) => {
   };
 
   const handleResize = () => {
+    /** @type {number} */
+    const oldWidth = width;
+    /** @type {number} */
+    const oldHeight = height;
+
     width = window.innerWidth;
     height = window.innerHeight;
     canvas.width = width;
     canvas.height = height;
+
+    // Redistribute stars to avoid "holes" after resize
+    stars = stars.map((star) => ({
+      ...star,
+      x: (star.x / oldWidth) * width,
+      y: (star.y / oldHeight) * height,
+    }));
+
+    // Clear meteors that are now out of bounds
+    meteors = meteors.filter((m) => m.x <= width + 100 && m.y <= height + 100);
   };
 
   window.addEventListener('resize', handleResize);
@@ -180,4 +200,4 @@ export const initSkyCanvas = (canvas) => {
 const canvasElement = document.getElementById('sky-canvas');
 
 /** @type {ReturnType<typeof initSkyCanvas> | null} */
-export const skyController = initSkyCanvas(canvasElement);
+export const skyController = canvasElement ? initSkyCanvas(canvasElement) : null;
