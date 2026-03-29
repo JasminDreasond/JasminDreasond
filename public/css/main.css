@@ -126,7 +126,8 @@ img.transition-animation:hover {
   pointer-events: none; /* Previne que o canvas bloqueie cliques da página */
 }
 
-#snow-canvas {
+#snow-canvas,
+#rain-canvas {
   position: fixed;
   top: 0;
   left: 0;
