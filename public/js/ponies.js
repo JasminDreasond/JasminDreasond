@@ -1,4 +1,4 @@
-import { checkMobile, toggleDarkMode } from './utils.js';
+import { mobileAndTabletCheck, toggleDarkMode } from './utils.js';
 
 export const initializePoniesAndSnow = () => {
   /** @type {moment.Moment} */
@@ -17,7 +17,7 @@ export const initializePoniesAndSnow = () => {
     else snowStorm.stop();
   }
 
-  if (!checkMobile() && typeof BrowserPonies !== 'undefined') {
+  if (!mobileAndTabletCheck() && typeof BrowserPonies !== 'undefined') {
     /** @type {Object<string, number>} */
     const spawnPonies = { sphinx: 1 };
     spawnPonies[isNight ? 'flutterbat' : 'fluttershy'] = 1;
