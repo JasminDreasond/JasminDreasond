@@ -1,4 +1,10 @@
 /**
+ * @fileoverview SnowCanvas.
+ * @author Yasmin Seidel (JasminDreasond)
+ * @contributor Gemini (AI Assistant by Google)
+ */
+
+/**
  * @typedef {Object} SnowConfig
  * @property {number} [maxParticles]
  * @property {number} [baseFallSpeed]

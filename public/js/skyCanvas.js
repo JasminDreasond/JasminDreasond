@@ -1,4 +1,10 @@
 /**
+ * @fileoverview SkyCanvas.
+ * @author Yasmin Seidel (JasminDreasond)
+ * @contributor Gemini (AI Assistant by Google)
+ */
+
+/**
  * @param {HTMLCanvasElement} canvas
  */
 export const initSkyCanvas = (canvas) => {
