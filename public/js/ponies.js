@@ -1,22 +1,9 @@
-import { mobileAndTabletCheck, toggleDarkMode } from './utils.js';
+import { mobileAndTabletCheck } from './utils.js';
 
-export const initializePoniesAndSnow = () => {
-  /** @type {moment.Moment} */
-  const timeNow = moment();
-  /** @type {number} */
-  const hour = timeNow.hour();
-  /** @type {number} */
-  const month = timeNow.month();
-
-  /** @type {boolean} */
-  const isNight = hour >= 19 || hour <= 4;
-  toggleDarkMode(isNight);
-
-  if (typeof snowStorm !== 'undefined') {
-    if (month >= 10) snowStorm.resume();
-    else snowStorm.stop();
-  }
-
+/**
+ * @param {boolean} isNight
+ */
+export const initializePonies = (isNight) => {
   if (!mobileAndTabletCheck() && typeof BrowserPonies !== 'undefined') {
     /** @type {Object<string, number>} */
     const spawnPonies = { sphinx: 1 };
@@ -41,9 +28,4 @@ export const initializePoniesAndSnow = () => {
       autostart: true,
     });
   }
-
-  if (typeof window.ethereum !== 'undefined') {
-    document.body.classList.add('web3-mode');
-  }
-  document.body.classList.remove('loading-page');
 };
