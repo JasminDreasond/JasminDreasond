@@ -6,7 +6,7 @@
     <a href="https://ko-fi.com/jasmindreasond"><img src="https://img.shields.io/badge/donate-ko%20fi-29ABE0.svg?logo=ko-fi&style=for-the-badge" alt="Ko-Fi" /></a>
     <a href="https://twitter.com/JasminDreasond"><img src="https://img.shields.io/twitter/follow/JasminDreasond?color=00acee&style=for-the-badge&logo=twitter" alt="Ko-Fi" /></a>
 </p>
-    <img src="https://github.com/JasminDreasond/JasminDreasond/blob/main/img/banner.jpg?raw=true" alt="banner" />
+    <img src="./public//img/banner.jpg?raw=true" alt="banner" />
 </div>
 
 ## GitHub Stats
