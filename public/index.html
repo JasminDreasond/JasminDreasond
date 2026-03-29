@@ -49,25 +49,6 @@
     ></script>
 
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Snowstorm/20131208/snowstorm-min.js"
-      integrity="sha512-rMkLONrw50boYG/6Ku0E8VstfWMRn5D0dX3QZS26Mg0rspYq4EHxYOULuPbv9Be2HBbrrmN8dpPgYUeJ4bINCA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script id="snow-storm-script">
-      snowStorm.targetElement = 'snow-storm-container';
-      snowStorm.autoStart = false;
-      snowStorm.snowColor = '#ffffff'; // blue-ish snow!?
-      snowStorm.flakesMaxActive = 96; // show more snow on screen at once
-      snowStorm.flakesMax = 128;
-      snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
-      snowStorm.usePositionFixed = true;
-      snowStorm.vMaxX = 8;
-      snowStorm.vMaxY = 5;
-      snowStorm.followMouse = true;
-    </script>
-
-    <script
       src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
       integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
       crossorigin="anonymous"
@@ -95,7 +76,7 @@
   </head>
 
   <body data-bs-theme="white" class="loading-page">
-    <div id="snow-storm-container"></div>
+    <canvas id="snow-canvas"></canvas>
     <canvas id="sky-canvas" class="container-sky"></canvas>
 
     <div class="py-0 py-md-4 py-xl-5">

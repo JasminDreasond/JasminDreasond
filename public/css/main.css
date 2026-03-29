@@ -125,3 +125,13 @@ img.transition-animation:hover {
   z-index: -1; /* Mantém o canvas atrás de todo o conteúdo da página */
   pointer-events: none; /* Previne que o canvas bloqueie cliques da página */
 }
+
+#snow-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20000000;
+  pointer-events: none;
+}
