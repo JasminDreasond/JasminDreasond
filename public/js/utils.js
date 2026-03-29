@@ -47,14 +47,8 @@ export const setupTimezone = () => {
  * @param {boolean} isDark
  */
 export const toggleDarkMode = (isDark) => {
-  if (document.body) {
-    document.body.setAttribute('data-bs-theme', isDark ? 'dark' : 'white');
-  }
-
-  if (skyController) {
-    skyController.setMode(isDark);
-  }
-
+  if (document.body) document.body.setAttribute('data-bs-theme', isDark ? 'dark' : 'white');
+  if (skyController) skyController.setMode(isDark);
   if (!isDark) {
     /** @type {HTMLCollectionOf<Element>} */
     const rainbowElements = document.getElementsByClassName('rainbowText');
@@ -62,6 +56,24 @@ export const toggleDarkMode = (isDark) => {
       generateRainbowText(rainbowElements[i]);
     }
   }
+
+  const changeStyle = (classNameBase) => {
+    const classRemove = classNameBase.replace('{value}', isDark ? 'light' : 'dark');
+    const classAdd = classNameBase.replace('{value}', isDark ? 'dark' : 'light');
+
+    const borderLight = document.querySelectorAll(`.${classRemove}`);
+    if (borderLight.length > 0) {
+      for (const item in borderLight) {
+        if (borderLight[item].classList && borderLight[item].classList.add) {
+          borderLight[item].classList.add(classAdd);
+          borderLight[item].classList.remove(classRemove);
+        }
+      }
+    }
+  };
+
+  changeStyle(`border-{value}-subtle`);
+  changeStyle(`bg-{value}`);
 };
 
 // window.addEventListener("load", rainbowTextStart);
