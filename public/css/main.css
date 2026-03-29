@@ -1,11 +1,7 @@
-html,
 body {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  transition: opacity 0.7s, background-color 0.7s;
+  transition:
+    opacity 0.7s,
+    background-color 0.7s;
   transition-timing-function: ease;
   will-change: opacity, background-color;
 }
@@ -31,24 +27,13 @@ body:not(.web3-mode) .web3-item {
 }
 
 .container-sky {
-  display: flex;
   height: 100%;
-  margin: auto;
-  padding: 1em 0;
   width: 100%;
   position: fixed;
 }
 
-[data-bs-theme="white"] .container-sky {
+[data-bs-theme='white'] .container-sky {
   background: #93d4f7;
-}
-
-#svg {
-  /* border: 1px solid #fff; */
-  display: block;
-  margin: auto;
-  /* max-width: 1000px; */
-  width: 100%;
 }
 
 .btn-dark {
@@ -57,8 +42,15 @@ body:not(.web3-mode) .web3-item {
 
 .username-title,
 .username-title > span {
-  text-shadow: 0.1px 0 #000, -0.1px 0 #000, 0 0.1px #000, 0 -0.1px #000,
-    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+  text-shadow:
+    0.1px 0 #000,
+    -0.1px 0 #000,
+    0 0.1px #000,
+    0 -0.1px #000,
+    1px 1px #000,
+    -1px -1px #000,
+    1px -1px #000,
+    -1px 1px #000;
 }
 
 .tiny-info-content {
@@ -71,7 +63,9 @@ body:not(.web3-mode) .web3-item {
 .transition-animation .username-title,
 .transition-animation h4.title,
 .transition-animation h5.title {
-  transition: scale 0.4s, font-size 0.4s;
+  transition:
+    scale 0.4s,
+    font-size 0.4s;
   transition-timing-function: ease;
   will-change: transform, font-size;
 }
@@ -110,13 +104,6 @@ img.transition-animation:hover {
   scale: 1.03;
 }
 
-[data-bs-theme="white"] .container-sky .night,
-[data-bs-theme="white"] .container-sky .stars,
-[data-bs-theme="white"] .container-sky .meteors,
-[data-bs-theme="white"] .container-sky .moon {
-  display: none !important;
-}
-
 .tiny-left-image {
   max-height: 300px;
   width: auto;
@@ -129,13 +116,12 @@ img.transition-animation:hover {
   float: right;
 }
 
-@media (max-width: 767px) {
-  .container-sky [id^="cloud-"] {
-    display: none !important;
-  }
-}
-
-.container-sky .cloud,
-.container-sky [id^="cloud-"] {
-  will-change: transform;
+.container-sky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Mantém o canvas atrás de todo o conteúdo da página */
+  pointer-events: none; /* Previne que o canvas bloqueie cliques da página */
 }

@@ -1,6 +1,6 @@
 ## Português (Original)
 
-Uma das coisas mais frustrantes de ter asperger é você ter a capacidade melhorada de interpretar a lógica das palavras, mas ter várias vezes dificuldade de interpretar os sentimentos de uma frase nos momentos que você mais precisa disso, e no final você só perceber isso quando é tarde demais. 
+Uma das coisas mais frustrantes de ter asperger é você ter a capacidade melhorada de interpretar a lógica das palavras, mas ter várias vezes dificuldade de interpretar os sentimentos de uma frase nos momentos que você mais precisa disso, e no final você só perceber isso quando é tarde demais.
 
 ## English
 

@@ -2,9 +2,13 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "fix:prettier": "prettier --write ./public/*"
   },
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "prettier": "3.6.2"
   }
 }

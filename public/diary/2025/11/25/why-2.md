@@ -1,6 +1,6 @@
 ## Português (Original)
 
-Depois de mais de 1 mês sofrendo com muita dor de cabeça intermináveis  que estavam interrompendo a minha rotina de trabalho dos meus projetos, eu acho que eu vou melhorar. Eu comecei a tomar um medicamento para tratamento de enxaqueca crônica.
+Depois de mais de 1 mês sofrendo com muita dor de cabeça intermináveis que estavam interrompendo a minha rotina de trabalho dos meus projetos, eu acho que eu vou melhorar. Eu comecei a tomar um medicamento para tratamento de enxaqueca crônica.
 
 Eu estou sentindo muito cansaço mental depois de ficar um ano inteiro desenvolvendo alguns 7 modulos NPM que eu vou utilizar em meus projetos, e reformando toda a estrutura base do website do Pony Driland, e também desenvolvendo a nova sala de roleplay dentro do website do Pony Driland que está interligado com sistema opcional de AI para quem gosta de RPG de mesa com AI.
 
