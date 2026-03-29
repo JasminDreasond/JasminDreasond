@@ -12,10 +12,9 @@ export const initializePoniesAndSnow = () => {
   const isNight = hour >= 19 || hour <= 4;
   toggleDarkMode(isNight);
 
-  if (month >= 10 && typeof snowStorm !== 'undefined') {
-    snowStorm.resume();
-  } else if (typeof snowStorm !== 'undefined') {
-    snowStorm.stop();
+  if (typeof snowStorm !== 'undefined') {
+    if (month >= 10) snowStorm.resume();
+    else snowStorm.stop();
   }
 
   if (!checkMobile() && typeof BrowserPonies !== 'undefined') {
@@ -23,8 +22,11 @@ export const initializePoniesAndSnow = () => {
     const spawnPonies = { sphinx: 1 };
     spawnPonies[isNight ? 'flutterbat' : 'fluttershy'] = 1;
 
-    BrowserPonies.setBaseUrl('https://browser.pony.house/');
-    BrowserPonies.loadConfig({
+    (function (cfg) {
+      BrowserPonies.setBaseUrl(cfg.baseurl);
+      BrowserPonies.loadConfig(BrowserPoniesBaseConfig);
+      BrowserPonies.loadConfig(cfg);
+    })({
       baseurl: 'https://browser.pony.house/',
       allowDoubleClickControl: true,
       fadeDuration: 500,
