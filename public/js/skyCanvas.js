@@ -169,3 +169,9 @@ export const initSkyCanvas = (canvas) => {
     },
   };
 };
+
+/** @type {HTMLCanvasElement | null} */
+const canvasElement = document.getElementById('sky-canvas');
+
+/** @type {ReturnType<typeof initSkyCanvas> | null} */
+export const skyController = initSkyCanvas(canvasElement);
