@@ -1,4 +1,4 @@
-# Legacy Archive — Tiny Jasmini (Pre-Current Design)
+# Legacy — Tiny Jasmini (Pre-Current Design)
 
 This folder does not represent the current version of Tiny Jasmini.
 
