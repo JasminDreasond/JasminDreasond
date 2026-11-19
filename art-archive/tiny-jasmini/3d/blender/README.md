@@ -33,4 +33,4 @@ The **Tiny Jasmini** 3D model is available for free use under the following cond
 ### 🔗 **Credit Requirement**
 - **Proper credit is mandatory**. You must include the following text in a visible place (e.g., video description, project credits, etc.):
 
-<img src="../../human-made/whiteskypony/2526489__safe_artist-colon-whiteskypony_oc_oc+only_oc-colon-tiny+jasmini_pegasus_pony_3d_cute_flower_pegasus+oc_simple+background_source+filmmaker_wings.jpg?raw=true" />
+<img src="../../images/human-made/whiteskypony/2526489__safe_artist-colon-whiteskypony_oc_oc+only_oc-colon-tiny+jasmini_pegasus_pony_3d_cute_flower_pegasus+oc_simple+background_source+filmmaker_wings.jpg?raw=true" />
