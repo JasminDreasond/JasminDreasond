@@ -49,3 +49,17 @@ If you are drawing him, those four points are the ones that matter most.
 
 Lack Dark-Aura was used for a long time. Eventually I felt abandoned by the old
 community, and I moved to the Brony community in my country.
+
+---
+
+## The Main Image
+
+The image in this folder is the reference piece. It shows Lack Dark-Aura sitting at a
+computer — and that computer is the exact model I was using when I drew it.
+
+The desk is not generic either. It is a drawn version of my real desk, including the same
+objects that were sitting on it at the time. Nothing in that scene was invented; it is a
+faithful copy of the room as it was.
+
+That makes this drawing a timestamp. It is not only a picture of the character, but also a
+record of where I was and what my setup looked like when I made him.
