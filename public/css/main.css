@@ -136,3 +136,9 @@ img.transition-animation:hover {
   z-index: 20000000;
   pointer-events: none;
 }
+
+/* Limits the 404 illustration height so the card fits on small screens. */
+.error-image {
+  max-height: 280px;
+  width: auto;
+}
