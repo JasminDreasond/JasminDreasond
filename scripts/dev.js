@@ -1,6 +1,8 @@
 import { createServer } from 'node:http';
+import { createReadStream } from 'node:fs';
+import { stat } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-import { dirname, join } from 'node:path';
+import { dirname, extname, join } from 'node:path';
 import sirv from 'sirv';
 
 /** @type {string} */
@@ -16,6 +18,9 @@ const PORT = Number(process.env.PORT) || 4000;
  * @type {boolean}
  */
 const USE_DIST = process.argv.includes('--dist');
+
+/** Root folder being served, used to resolve the 404 page. */
+const SITE_DIR = join(ROOT, USE_DIST ? 'dist' : 'public');
 
 /**
  * Wraps a sirv handler so it only answers for `prefix`, leaving every other
@@ -42,11 +47,49 @@ function serveDir(prefix, dir) {
 
 /**
  * @param {import('node:http').ServerResponse} res
+ * @param {string} body
  */
-function notFound(res) {
+function sendText(res, body) {
   res.statusCode = 404;
   res.setHeader('Content-Type', 'text/plain; charset=utf-8');
-  res.end('404 Not Found');
+  res.end(body);
+}
+
+/**
+ * Serves `404.html` for page navigations and a plain text body for assets, so a
+ * missing image does not return an HTML document. The status is always 404.
+ *
+ * @param {import('node:http').IncomingMessage} req
+ * @param {import('node:http').ServerResponse} res
+ */
+async function notFound(req, res) {
+  const url = (req.url || '/').split(/[?#]/)[0];
+  const acceptsHtml = (req.headers.accept || '').includes('text/html');
+
+  // Only browsers navigating to a page get the HTML page. A missing asset must
+  // keep failing as an asset, otherwise the browser tries to decode HTML as an
+  // image/script/stylesheet.
+  if (!acceptsHtml && extname(url) !== '') return sendText(res, '404 Not Found');
+
+  const file = join(SITE_DIR, '404.html');
+
+  let size;
+  try {
+    ({ size } = await stat(file));
+  } catch {
+    return sendText(res, '404 Not Found');
+  }
+
+  res.statusCode = 404;
+  res.setHeader('Content-Type', 'text/html; charset=utf-8');
+  res.setHeader('Content-Length', size);
+  res.setHeader('Cache-Control', 'no-store');
+
+  if (req.method === 'HEAD') return res.end();
+
+  const stream = createReadStream(file);
+  stream.on('error', () => res.destroy());
+  stream.pipe(res);
 }
 
 /**
@@ -65,7 +108,7 @@ createServer((req, res) => {
 
   const next = () => {
     const route = routes[index++];
-    if (!route) return notFound(res);
+    if (!route) return void notFound(req, res);
     route(req, res, next);
   };
 
