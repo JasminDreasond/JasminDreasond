@@ -1,4 +1,4 @@
-# Tiny Jasmini — Canon Art
+# Tiny Jasmini
 
 This folder is the official archive of **Tiny Jasmini**, an original character created by me on **August 14, 2017**.
 
